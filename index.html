@@ -3,26 +3,188 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BudMar – Ocieplenia Domów | Kolno i okolice</title>
-  <meta name="description" content="Profesjonalne ocieplenia domów i budynków gospodarczych w Kolnie i okolicach. Własne rusztowania 800m², hurtowe ceny materiałów."/>
+
+  <!-- ─── SEO PODSTAWOWE ─── -->
+  <title>Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MARBUD</title>
+  <meta name="description" content="Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplamy ściany, poddasza i fundamenty. Cała Warszawa i okolice."/>
+  <meta name="robots" content="index, follow"/>
+  <!-- DO UZUPEŁNIENIA: jeśli kupisz domenę warszawską, podmień canonical + sitemap.xml + CNAME -->
+  <link rel="canonical" href="https://ociepleniapisz.pl/"/>
+
+  <!-- ─── FAVICON ─── -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="favicon.png"/>
+
+  <!-- ─── OPEN GRAPH / SOCIAL ─── -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="pl_PL"/>
+  <meta property="og:title" content="Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MARBUD"/>
+  <meta property="og:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
+  <meta property="og:url" content="https://ociepleniapisz.pl/"/>
+  <meta property="og:image" content="https://ociepleniapisz.pl/1.jpg"/>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- ─── JSON-LD: LocalBusiness ─── -->
+  <!-- DO UZUPEŁNIENIA: po założeniu wizytówki Google dodaj "sameAs" (link do GBP)
+       oraz "aggregateRating", gdy pojawią się opinie. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
+    "name": "MARBUD Ocieplenia",
+    "description": "Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplenie ścian, poddaszy i fundamentów, elewacje i tynki.",
+    "url": "https://ociepleniapisz.pl/",
+    "telephone": "+48535685720",
+    "email": "budmar.info@gmail.com",
+    "vatID": "PL8491375008",
+    "taxID": "8491375008",
+    "identifier": {
+      "@type": "PropertyValue",
+      "propertyName": "REGON",
+      "value": "525485703"
+    },
+    "image": "https://ociepleniapisz.pl/1.jpg",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "ul. Domaniewska 13/15 lok. 75",
+      "postalCode": "02-672",
+      "addressLocality": "Warszawa",
+      "addressRegion": "Mazowieckie",
+      "addressCountry": "PL"
+    },
+    "hasMap": "https://www.google.com/maps?q=Domaniewska+13%2F15,+02-672+Warszawa",
+    "areaServed": [
+      { "@type": "City", "name": "Warszawa" },
+      { "@type": "AdministrativeArea", "name": "Mokotów" },
+      { "@type": "AdministrativeArea", "name": "Wawer" },
+      { "@type": "AdministrativeArea", "name": "Wesoła" },
+      { "@type": "AdministrativeArea", "name": "Ursynów" },
+      { "@type": "AdministrativeArea", "name": "Wilanów" },
+      { "@type": "AdministrativeArea", "name": "Białołęka" },
+      { "@type": "AdministrativeArea", "name": "Włochy" },
+      { "@type": "AdministrativeArea", "name": "Ursus" },
+      { "@type": "AdministrativeArea", "name": "Bemowo" },
+      { "@type": "AdministrativeArea", "name": "Targówek" },
+      { "@type": "City", "name": "Piaseczno" },
+      { "@type": "City", "name": "Józefów" },
+      { "@type": "City", "name": "Marki" },
+      { "@type": "City", "name": "Ząbki" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ─── JSON-LD: Service ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Ocieplenia domów i termomodernizacja",
+    "provider": {
+      "@type": "GeneralContractor",
+      "name": "MARBUD Ocieplenia",
+      "telephone": "+48535685720"
+    },
+    "areaServed": { "@type": "City", "name": "Warszawa" },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Zakres usług",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocieplenie styropianem (metoda BSO)" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocieplenie wełną mineralną" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocieplenie pianką PUR" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocieplenie poddasza" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ocieplenie fundamentów" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- ─── JSON-LD: FAQPage (zsynchronizowane 1:1 z sekcją FAQ) ─── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Ile kosztuje ocieplenie domu za m²?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cena zależy od metody (styropian, wełna, pianka PUR), grubości izolacji, stanu ścian i rodzaju tynku. Orientacyjnie ocieplenie liczone jest za m² powierzchni elewacji, a dokładny kosztorys podajemy bezpłatnie po pomiarze budynku."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jak długo trwa ocieplenie domu jednorodzinnego?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Standardowe ocieplenie domu jednorodzinnego metodą BSO trwa zwykle od 1 do 3 tygodni, w zależności od metrażu elewacji, pogody i zakresu prac wykończeniowych. Dokładny termin ustalamy przy wycenie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy na wykonane ocieplenie jest gwarancja?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy gwarancji — szczegółowe warunki ustalamy w umowie przed rozpoczęciem robót. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Styropian czy pianka PUR — co wybrać?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Styropian (metoda BSO) to najbardziej ekonomiczne i sprawdzone rozwiązanie dla elewacji domów jednorodzinnych. Pianka PUR sprawdza się tam, gdzie liczy się szczelność i brak mostków termicznych — m.in. przy poddaszach, stropodachach i miejscach o nietypowych kształtach. Wełna mineralna wybierana jest dla lepszej akustyki i odporności ogniowej. Dobór metody zależy od budynku — doradzamy przy wycenie."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Czy ocieplacie poddasza i fundamenty?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tak. Poza ociepleniem ścian zewnętrznych wykonujemy ocieplenie poddaszy i stropodachów (wełna lub pianka PUR) oraz ocieplenie fundamentów i ścian fundamentowych, które ogranicza straty ciepła w dolnej części budynku."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Jaki obszar obsługujecie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Działamy na terenie całej Warszawy — z siedzibą na Mokotowie — oraz w okolicach podwarszawskich. Realizujemy ocieplenia m.in. na Wawrze, Wesołej, Ursynowie, Wilanowie, Białołęce, Włochach, Ursusie, Bemowie i Targówku, a także w Piasecznie, Józefowie, Markach i Ząbkach."
+        }
+      }
+    ]
+  }
+  </script>
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:      #ffffff;
-      --bg2:     #f7f6f2;
-      --bg3:     #eef0f3;
-      --ink:     #1a1f2e;
-      --ink2:    #4a5060;
-      --accent:  #f97316;
-      --accent2: #e86000;
-      --light-o: #fff4ec;
-      --border:  #e4e6ea;
-      --ff-h:    'Barlow Condensed', sans-serif;
-      --ff-b:    'Nunito', sans-serif;
-      --ease:    cubic-bezier(.25,.8,.25,1);
+      --bg:       #ffffff;
+      --bg2:      #f7f6f2;
+      --bg3:      #eef0f3;
+      --ink:      #1a1f2e;
+      --ink2:     #4a5060;
+      --accent:   #c1121f;
+      --accent2:  #9a0e18;
+      --light-o:  #fcebec;
+      --border:   #e4e6ea;
+      --border-s: #d3d7df;   /* mocniejsza krawędź kart */
+      --ff-h:     'Barlow Condensed', sans-serif;
+      --ff-b:     'Nunito', sans-serif;
+      --ease:     cubic-bezier(.25,.8,.25,1);
     }
 
     html { scroll-behavior: smooth; }
@@ -31,29 +193,44 @@
     ::-webkit-scrollbar-track { background: var(--bg2); }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
+    /* dostępność – widoczny focus dla klawiatury */
+    a:focus-visible, button:focus-visible, summary:focus-visible,
+    input:focus-visible, select:focus-visible, textarea:focus-visible {
+      outline: 3px solid var(--accent); outline-offset: 2px;
+    }
+
+    /* ─── IKONY (inline SVG sprite) ─── */
+    .ico {
+      display: inline-block; width: 1em; height: 1em;
+      vertical-align: -0.14em; flex-shrink: 0;
+      fill: none; stroke: currentColor; stroke-width: 2;
+      stroke-linecap: round; stroke-linejoin: round;
+    }
+
     /* ─── NAV ─── */
     nav {
       position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
       padding: 14px 5%;
       display: flex; align-items: center; justify-content: space-between;
-      background: rgba(255,255,255,.9);
+      background: rgba(26,31,46,.92);
       backdrop-filter: blur(12px);
       border-bottom: 1px solid transparent;
       transition: border-color .3s, box-shadow .3s;
     }
-    nav.scrolled { border-color: var(--border); box-shadow: 0 2px 20px rgba(0,0,0,.06); }
-    .logo {
-      font-family: var(--ff-h); font-size: 1.75rem; font-weight: 900;
-      letter-spacing: .08em; color: var(--ink); text-decoration: none; line-height: 1;
+    nav.scrolled { border-color: rgba(255,255,255,.12); box-shadow: 0 4px 24px rgba(0,0,0,.30); }
+    .logo { display: flex; align-items: center; text-decoration: none; line-height: 1; }
+    .logo-img { height: 42px; width: auto; display: block; }
+    .nav-menu { display: flex; align-items: center; gap: 26px; }
+    .nav-menu a.nav-link {
+      font-size: .82rem; font-weight: 700; letter-spacing: .04em;
+      color: #fff; text-decoration: none; text-transform: uppercase;
+      transition: color .2s;
     }
-    .logo span { color: var(--accent); }
-    .logo-sub { display: block; font-size: .45rem; font-weight: 700; letter-spacing: .28em; color: var(--ink2); text-transform: uppercase; }
-    .nav-cta {
-      display: flex; align-items: center; gap: 12px;
-    }
+    .nav-menu a.nav-link:hover { color: var(--accent); }
+    .nav-cta { display: flex; align-items: center; gap: 12px; }
     .nav-phone-link {
       font-family: var(--ff-h); font-size: 1.35rem; font-weight: 800;
-      letter-spacing: .06em; color: var(--ink); text-decoration: none;
+      letter-spacing: .06em; color: #fff; text-decoration: none;
       transition: color .2s;
     }
     .nav-phone-link:hover { color: var(--accent); }
@@ -66,6 +243,17 @@
       white-space: nowrap;
     }
     .nav-btn:hover { background: var(--accent2); transform: translateY(-2px); }
+
+    /* hamburger */
+    .nav-toggle {
+      display: none; width: 40px; height: 40px; padding: 0;
+      background: transparent; border: none; cursor: pointer;
+      flex-direction: column; justify-content: center; align-items: center; gap: 5px;
+    }
+    .nav-toggle span { width: 24px; height: 2.5px; background: #fff; border-radius: 2px; transition: transform .3s var(--ease), opacity .2s; }
+    nav.menu-open .nav-toggle span:nth-child(1) { transform: translateY(7.5px) rotate(45deg); }
+    nav.menu-open .nav-toggle span:nth-child(2) { opacity: 0; }
+    nav.menu-open .nav-toggle span:nth-child(3) { transform: translateY(-7.5px) rotate(-45deg); }
 
     /* ─── HERO ─── */
     #hero {
@@ -90,11 +278,11 @@
         rgba(255,255,255,0) 100%
       );
     }
-    .hero-inner { position: relative; z-index: 2; max-width: 620px; }
+    .hero-inner { position: relative; z-index: 2; max-width: 640px; }
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: var(--light-o); border: 1.5px solid rgba(249,115,22,.3);
+      background: var(--light-o); border: 1.5px solid rgba(193,18,31,.3);
       color: var(--accent); padding: 6px 16px; margin-bottom: 24px;
       font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
       opacity: 0; transform: translateY(14px);
@@ -104,7 +292,7 @@
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
 
     h1 {
-      font-family: var(--ff-h); font-size: clamp(3rem, 8vw, 6.5rem);
+      font-family: var(--ff-h); font-size: clamp(2.8rem, 7.5vw, 6rem);
       font-weight: 900; line-height: .92; letter-spacing: .02em; color: var(--ink);
       opacity: 0; transform: translateY(20px);
       animation: fadeUp .6s .25s var(--ease) forwards;
@@ -114,7 +302,7 @@
 
     .hero-lead {
       margin-top: 20px; font-size: 1.05rem; font-weight: 400; color: var(--ink2);
-      max-width: 460px; line-height: 1.65;
+      max-width: 480px; line-height: 1.65;
       opacity: 0; transform: translateY(14px);
       animation: fadeUp .5s .42s var(--ease) forwards;
     }
@@ -125,11 +313,12 @@
       animation: fadeUp .5s .58s var(--ease) forwards;
     }
     .chip {
-      display: flex; align-items: center; gap: 7px;
-      background: var(--bg); border: 1.5px solid var(--border);
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bg); border: 1.5px solid var(--border-s);
       padding: 7px 16px; font-size: .8rem; font-weight: 700;
       color: var(--ink); box-shadow: 0 1px 6px rgba(0,0,0,.05);
     }
+    .chip .ico { width: 16px; height: 16px; color: var(--accent); }
 
     .hero-actions {
       margin-top: 32px; display: flex; flex-wrap: wrap; gap: 14px;
@@ -144,8 +333,9 @@
       border: 2px solid transparent; cursor: pointer;
       transition: all .3s var(--ease);
     }
+    .btn .ico { width: 1.05em; height: 1.05em; }
     .btn-orange { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .btn-orange:hover { background: var(--accent2); border-color: var(--accent2); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(249,115,22,.35); }
+    .btn-orange:hover { background: var(--accent2); border-color: var(--accent2); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(193,18,31,.35); }
     .btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
     .btn-outline:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
 
@@ -161,10 +351,20 @@
 
     @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
 
+    /* ─── PASEK ZAUFANIA ─── */
+    .trust-bar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+      gap: 14px 32px; padding: 18px 5%;
+      background: var(--ink); border-bottom: 3px solid var(--accent);
+    }
+    .trust-item { display: flex; align-items: center; gap: 9px; font-size: .82rem; font-weight: 700; letter-spacing: .04em; color: rgba(255,255,255,.85); }
+    .trust-item b { color: #fff; }
+    .trust-ico { width: 18px; height: 18px; color: var(--accent); }
+
     /* ─── STATS BAR ─── */
     .stats-bar {
       display: grid; grid-template-columns: repeat(4,1fr);
-      background: var(--bg2); border-top: 3px solid var(--accent);
+      background: var(--bg2);
       border-bottom: 1px solid var(--border);
     }
     .stat-item {
@@ -195,8 +395,10 @@
       padding: 18px 0; border-bottom: 1px solid var(--border);
     }
     .wi:last-child { border-bottom: none; }
-    .wi-icon { flex-shrink:0; width:44px; height:44px; background: var(--light-o); display:flex; align-items:center; justify-content:center; font-size:1.2rem; transition: background .3s; }
+    .wi-icon { flex-shrink:0; width:44px; height:44px; background: var(--light-o); display:flex; align-items:center; justify-content:center; transition: background .3s; }
+    .wi-icon .ico { width: 22px; height: 22px; color: var(--accent); transition: color .3s; }
     .wi:hover .wi-icon { background: var(--accent); }
+    .wi:hover .wi-icon .ico { color: #fff; }
     .wi-t { font-size: .93rem; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
     .wi-d { font-size: .82rem; font-weight: 400; color: var(--ink2); line-height: 1.6; }
 
@@ -204,26 +406,28 @@
     #services { background: var(--bg2); }
     .srv-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 44px; }
     .srv-card {
-      background: var(--bg); border: 1.5px solid var(--border);
+      background: var(--bg); border: 1.5px solid var(--border-s);
       padding: 36px 28px; position: relative; overflow: hidden;
       transition: transform .3s var(--ease), box-shadow .3s, border-color .3s;
     }
-    .srv-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,.08); border-color: var(--accent); }
+    .srv-card:hover { transform: translateY(-5px); box-shadow: 0 14px 44px rgba(0,0,0,.10); border-color: var(--accent); }
     .srv-card::before { content:''; position:absolute; bottom:0; left:0; width:0; height:3px; background:var(--accent); transition:width .4s var(--ease); }
     .srv-card:hover::before { width:100%; }
-    .srv-em { font-size: 2.2rem; margin-bottom: 16px; display:block; }
+    .srv-em { display: inline-flex; width: 40px; height: 40px; margin-bottom: 16px; color: var(--accent); }
+    .srv-em .ico { width: 32px; height: 32px; }
     .srv-name { font-family: var(--ff-h); font-size: 1.4rem; font-weight: 800; color: var(--ink); letter-spacing:.04em; margin-bottom: 8px; }
     .srv-desc { font-size: .83rem; font-weight: 400; color: var(--ink2); line-height: 1.65; }
     .srv-pill { margin-top:14px; display:inline-block; background:var(--light-o); color:var(--accent); font-size:.65rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:4px 12px; }
 
-    /* ─── ADVANTAGE ─── */
-    #advantage { background: var(--bg); }
+    /* ─── ADVANTAGE (ciemne przełamanie rytmu) ─── */
+    #advantage { background: var(--ink); }
+    #advantage .sec-title { color: #fff; }
     .adv-wrap { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 48px; }
     .adv-card {
-      background: var(--bg2); padding: 40px 30px; position: relative; overflow: hidden;
+      background: rgba(255,255,255,.05); padding: 40px 30px; position: relative; overflow: hidden;
       transition: background .3s, transform .3s;
     }
-    .adv-card:hover { background: var(--bg3); transform: translateY(-4px); }
+    .adv-card:hover { background: rgba(255,255,255,.09); transform: translateY(-4px); }
     .adv-card.hero-adv {
       background: var(--accent); grid-column: span 2;
     }
@@ -231,15 +435,15 @@
     .adv-bg-num {
       font-family: var(--ff-h); font-size: 5.5rem; font-weight: 900;
       position:absolute; top:10px; right:18px; line-height:1;
-      color: rgba(0,0,0,.05); pointer-events:none;
+      color: rgba(255,255,255,.06); pointer-events:none;
     }
-    .adv-card.hero-adv .adv-bg-num { color: rgba(255,255,255,.15); }
-    .adv-ico { width:50px; height:50px; background:var(--light-o); display:flex; align-items:center; justify-content:center; font-size:1.35rem; margin-bottom:18px; }
-    .adv-card.hero-adv .adv-ico { background:rgba(255,255,255,.2); }
-    .adv-title { font-family:var(--ff-h); font-size:1.55rem; font-weight:800; color:var(--ink); letter-spacing:.04em; margin-bottom:10px; }
-    .adv-card.hero-adv .adv-title { color:#fff; }
-    .adv-text { font-size:.84rem; font-weight:400; color:var(--ink2); line-height:1.65; }
-    .adv-card.hero-adv .adv-text { color:rgba(255,255,255,.8); }
+    .adv-card.hero-adv .adv-bg-num { color: rgba(255,255,255,.16); }
+    .adv-ico { width:50px; height:50px; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color: var(--accent); }
+    .adv-ico .ico { width: 24px; height: 24px; }
+    .adv-card.hero-adv .adv-ico { background:rgba(255,255,255,.2); color: #fff; }
+    .adv-title { font-family:var(--ff-h); font-size:1.55rem; font-weight:800; color:#fff; letter-spacing:.04em; margin-bottom:10px; }
+    .adv-text { font-size:.84rem; font-weight:400; color:rgba(255,255,255,.72); line-height:1.65; }
+    .adv-card.hero-adv .adv-text { color:rgba(255,255,255,.85); }
     .adv-tag { margin-top:16px; font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:8px; }
     .adv-tag::before { content:''; width:24px; height:2px; background:var(--accent); }
     .adv-card.hero-adv .adv-tag { color:rgba(255,255,255,.9); }
@@ -249,76 +453,113 @@
     #process { background: var(--bg2); }
     .proc-row { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; margin-top: 52px; }
     .proc-card {
-      background: var(--bg); border: 1.5px solid var(--border);
+      background: var(--bg); border: 1.5px solid var(--border-s);
       padding: 32px 24px; text-align: center;
       transition: border-color .3s, transform .3s, box-shadow .3s;
     }
-    .proc-card:hover { border-color: var(--accent); transform:translateY(-4px); box-shadow:0 10px 30px rgba(0,0,0,.07); }
+    .proc-card:hover { border-color: var(--accent); transform:translateY(-4px); box-shadow:0 12px 34px rgba(0,0,0,.09); }
     .proc-num { font-family:var(--ff-h); font-size:3.2rem; font-weight:900; color:var(--accent); line-height:1; }
     .proc-title { font-family:var(--ff-h); font-size:1.2rem; font-weight:800; color:var(--ink); letter-spacing:.04em; margin:10px 0 6px; }
     .proc-desc { font-size:.8rem; color:var(--ink2); line-height:1.6; }
 
-    /* ─── GALLERY ─── */
+    /* ─── GALLERY / REALIZACJE ─── */
     #gallery { background: var(--bg); padding-bottom: 80px; }
     .gal-intro { display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px; margin-bottom:36px; }
     .gal-note { font-size:.9rem; font-weight:400; color:var(--ink2); max-width:400px; }
 
-    /* Masonry-style grid: 3 columns, 10 photos */
     .gal-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-auto-rows: 240px;
-      gap: 8px;
+      gap: 14px;
     }
-    .gal-grid .g { overflow:hidden; cursor:pointer; }
-    .gal-grid .g img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .55s var(--ease), filter .55s; filter:brightness(.93); }
-    .gal-grid .g:hover img { transform:scale(1.06); filter:brightness(1); }
-    /* Tall items */
-    .gal-grid .g.t2 { grid-row: span 2; }
+    .real-card { background: var(--bg2); border: 1.5px solid var(--border-s); overflow: hidden; transition: border-color .3s, transform .3s, box-shadow .3s; }
+    .real-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 14px 38px rgba(0,0,0,.10); }
+    .real-photo { height: 230px; overflow: hidden; }
+    .real-photo img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .55s var(--ease); }
+    .real-card:hover .real-photo img { transform: scale(1.06); }
+    .real-meta { padding: 16px 18px; }
+    .real-loc { font-family: var(--ff-h); font-size: 1.15rem; font-weight: 800; color: var(--ink); letter-spacing: .03em; }
+    .real-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .real-tag { background: var(--light-o); color: var(--accent); font-size: .66rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 10px; }
 
     /* ─── AREA ─── */
     #area { background: var(--bg2); }
     .area-inner { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:center; }
     .area-map {
-      background: var(--bg3); border:1.5px solid var(--border);
+      background: var(--bg3); border:1.5px solid var(--border-s);
       height:360px; display:flex; align-items:center; justify-content:center;
-      font-size:4rem; position:relative; overflow:hidden;
+      position:relative; overflow:hidden;
     }
     .area-map img { width:100%; height:100%; object-fit:cover; display:block; }
-    .area-list { display:flex; flex-direction:column; gap:0; }
-    .area-item { display:flex; align-items:center; gap:12px; padding:14px 0; border-bottom:1px solid var(--border); font-size:.9rem; font-weight:600; color:var(--ink); }
-    .area-item:last-child { border-bottom:none; }
-    .area-item::before { content:'📍'; font-size:1rem; }
-    .area-note { margin-top:20px; font-size:.83rem; font-weight:400; color:var(--ink2); line-height:1.65; padding:16px 20px; background:var(--light-o); border-left:3px solid var(--accent); }
-
-    /* ─── CONTACT CTA ─── */
-    #contact { background: var(--accent); padding: 80px 5%; }
-    .contact-inner { max-width:700px; margin:0 auto; text-align:center; }
-    .contact-inner h2 { font-family:var(--ff-h); font-size:clamp(2.4rem,6vw,4.5rem); font-weight:900; color:#fff; line-height:.95; letter-spacing:.02em; }
-    .contact-inner h2 span { color:rgba(255,255,255,.5); font-weight:400; }
-    .contact-inner p { margin-top:16px; font-size:1rem; color:rgba(255,255,255,.8); font-weight:400; line-height:1.6; }
-    .contact-methods { margin-top:36px; display:flex; flex-wrap:wrap; justify-content:center; gap:16px; }
-    .c-card {
-      background:rgba(255,255,255,.15); border:1.5px solid rgba(255,255,255,.25);
-      padding:20px 32px; text-align:center; min-width:220px;
-      transition: background .3s, transform .3s;
-      text-decoration:none;
+    .area-map iframe { width:100%; height:100%; border:0; display:block; }
+    .area-cols { display:grid; grid-template-columns:1fr 1fr; gap:0 28px; }
+    .area-item { display:flex; align-items:center; gap:10px; padding:11px 0; border-bottom:1px solid var(--border); font-size:.88rem; font-weight:600; color:var(--ink); }
+    .area-item::before {
+      content:''; width:15px; height:15px; flex-shrink:0;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c1121f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center/contain no-repeat;
     }
-    .c-card:hover { background:rgba(255,255,255,.25); transform:translateY(-3px); }
-    .c-card-lbl { font-size:.65rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.7); margin-bottom:4px; }
-    .c-card-val { font-family:var(--ff-h); font-size:1.6rem; font-weight:900; color:#fff; letter-spacing:.06em; }
-    .c-card-sub { font-size:.75rem; color:rgba(255,255,255,.65); margin-top:2px; }
-    .big-call { display:inline-flex; align-items:center; gap:14px; background:#fff; padding:18px 44px; text-decoration:none; margin-top:24px; transition: transform .3s, box-shadow .3s; }
-    .big-call:hover { transform:translateY(-4px); box-shadow:0 12px 36px rgba(0,0,0,.2); }
-    .big-call span { font-family:var(--ff-h); font-size:2rem; font-weight:900; color:var(--accent); letter-spacing:.08em; }
-    .big-call-sub { font-size:.7rem; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--ink2); display:block; }
+    .area-note { margin-top:20px; font-size:.83rem; font-weight:400; color:var(--ink2); line-height:1.65; padding:16px 20px; background:var(--light-o); border-left:3px solid var(--accent); }
+    .area-prose { margin-top: 22px; font-size: .9rem; color: var(--ink2); line-height: 1.75; }
+
+    /* ─── FAQ ─── */
+    #faq { background: var(--bg2); }
+    .faq-wrap { max-width: 820px; margin: 44px auto 0; }
+    .faq-item { background: var(--bg); border: 1.5px solid var(--border-s); margin-bottom: 12px; transition: border-color .3s; }
+    .faq-item[open] { border-color: var(--accent); }
+    .faq-item summary {
+      list-style: none; cursor: pointer; padding: 22px 26px;
+      display: flex; justify-content: space-between; align-items: center; gap: 18px;
+      font-family: var(--ff-h); font-size: 1.2rem; font-weight: 700; color: var(--ink); letter-spacing: .02em;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 1.8rem; font-weight: 400; color: var(--accent); line-height: 1; transition: transform .3s; }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item .faq-a { padding: 0 26px 24px; font-size: .92rem; color: var(--ink2); line-height: 1.75; }
+
+    /* ─── CONTACT ─── */
+    #contact { background: var(--accent); padding: 80px 5%; }
+    .contact-inner { max-width: 1040px; margin:0 auto; }
+    .contact-head { text-align:center; max-width:700px; margin:0 auto 44px; }
+    .contact-head h2 { font-family:var(--ff-h); font-size:clamp(2.4rem,6vw,4.2rem); font-weight:900; color:#fff; line-height:.95; letter-spacing:.02em; }
+    .contact-head h2 span { color:rgba(255,255,255,.5); font-weight:400; }
+    .contact-head p { margin-top:16px; font-size:1rem; color:rgba(255,255,255,.85); font-weight:400; line-height:1.6; }
+    .contact-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items:start; }
+
+    .form-card { background:#fff; padding: 32px 30px; }
+    .form-card h3 { font-family:var(--ff-h); font-size:1.6rem; font-weight:800; color:var(--ink); letter-spacing:.03em; margin-bottom:6px; }
+    .form-card .form-sub { font-size:.85rem; color:var(--ink2); margin-bottom:22px; }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+    .field { margin-bottom:14px; }
+    .field label { display:block; font-size:.74rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink2); margin-bottom:6px; }
+    .field input, .field select, .field textarea {
+      width:100%; padding:12px 14px; font-family:var(--ff-b); font-size:.9rem;
+      border:1.5px solid var(--border-s); background:var(--bg2); color:var(--ink);
+      transition:border-color .2s, background .2s;
+    }
+    .field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--accent); background:#fff; }
+    .field textarea { resize:vertical; min-height:96px; }
+    .form-card button { width:100%; border:none; margin-top:6px; justify-content:center; }
+    .form-note { margin-top:12px; font-size:.72rem; color:var(--ink2); text-align:center; }
+    .hp { position:absolute; left:-9999px; }
+
+    .contact-side { display:flex; flex-direction:column; gap:14px; }
+    .c-card {
+      background:rgba(255,255,255,.15); border:1.5px solid rgba(255,255,255,.28);
+      padding:20px 26px; text-decoration:none; display:block;
+      transition: background .3s, transform .3s;
+    }
+    .c-card:hover { background:rgba(255,255,255,.26); transform:translateY(-3px); }
+    .c-card-lbl { font-size:.65rem; font-weight:700; letter-spacing:.2em; text-transform:uppercase; color:rgba(255,255,255,.75); margin-bottom:4px; }
+    .c-card-val { font-family:var(--ff-h); font-size:1.5rem; font-weight:900; color:#fff; letter-spacing:.05em; display:flex; align-items:center; gap:10px; }
+    .c-card-val .ico { width:20px; height:20px; }
+    .c-card-sub { font-size:.75rem; color:rgba(255,255,255,.7); margin-top:2px; }
 
     /* ─── FOOTER ─── */
     footer { background: var(--ink); padding:28px 5%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; }
-    .f-logo { font-family:var(--ff-h); font-size:1.4rem; font-weight:900; letter-spacing:.1em; color:rgba(255,255,255,.3); text-decoration:none; }
-    .f-logo span { color:var(--accent); }
+    .f-logo { display:inline-flex; align-items:center; text-decoration:none; }
+    .f-logo-img { height:42px; width:auto; display:block; }
     footer p { font-size:.75rem; color:rgba(255,255,255,.2); }
-    .f-links { display:flex; gap:20px; }
+    .f-links { display:flex; gap:20px; flex-wrap:wrap; }
     .f-links a { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.25); text-decoration:none; transition:color .2s; }
     .f-links a:hover { color:var(--accent); }
 
@@ -331,6 +572,33 @@
     /* ─── MOB CALL ─── */
     .mob-call { display:none; position:fixed; bottom:0; left:0; right:0; z-index:198; background:var(--accent); }
     .mob-call a { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:15px; color:#fff; text-decoration:none; font-family:var(--ff-h); font-size:1.3rem; font-weight:900; letter-spacing:.08em; }
+    .mob-call .ico { width:20px; height:20px; }
+
+    /* ─── MAPA (placeholder przed zgodą) ─── */
+    .map-ph { text-align:center; padding:24px; }
+    .map-ph p { font-size:.85rem; color:var(--ink2); margin-bottom:14px; max-width:300px; line-height:1.55; }
+    .form-note a { color:var(--accent); text-decoration:underline; }
+
+    /* ─── COOKIE BANNER (RODO) ─── */
+    .cookie-bar {
+      position:fixed; left:0; right:0; bottom:0; z-index:200;
+      background:var(--ink); color:#fff; padding:18px 5%;
+      display:flex; gap:18px; align-items:center; justify-content:center; flex-wrap:wrap;
+      box-shadow:0 -4px 24px rgba(0,0,0,.3);
+    }
+    .cookie-bar.hidden { display:none; }
+    .cookie-text { font-size:.82rem; color:rgba(255,255,255,.82); max-width:640px; line-height:1.55; }
+    .cookie-text a { color:var(--accent); text-decoration:underline; }
+    .cookie-actions { display:flex; gap:10px; flex-wrap:wrap; }
+    .cookie-btn {
+      padding:11px 22px; font-family:var(--ff-b); font-size:.76rem; font-weight:700;
+      letter-spacing:.06em; text-transform:uppercase; cursor:pointer; border:1.5px solid;
+      transition:background .25s, transform .2s;
+    }
+    .cookie-accept { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .cookie-accept:hover { background:var(--accent2); border-color:var(--accent2); transform:translateY(-2px); }
+    .cookie-reject { background:transparent; border-color:rgba(255,255,255,.4); color:#fff; }
+    .cookie-reject:hover { border-color:#fff; }
 
     /* ─── REVEAL ─── */
     .rv { opacity:0; transform:translateY(26px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
@@ -339,6 +607,19 @@
 
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1024px) {
+      .nav-toggle { display: flex; }
+      .nav-menu {
+        position: fixed; top: 62px; left: 0; right: 0;
+        flex-direction: column; align-items: stretch; gap: 0;
+        background: #fff; padding: 8px 5% 18px;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 14px 30px rgba(0,0,0,.10);
+        transform: translateY(-130%); transition: transform .35s var(--ease);
+      }
+      nav.menu-open .nav-menu { transform: translateY(0); }
+      .nav-menu a.nav-link { padding: 15px 4px; font-size: 1rem; color: var(--ink); border-bottom: 1px solid var(--border); }
+      .nav-menu a.nav-link:last-child { border-bottom: none; }
+
       .adv-wrap { grid-template-columns: 1fr 1fr; }
       .adv-card.hero-adv { grid-column: span 2; }
       .srv-grid { grid-template-columns: 1fr 1fr; }
@@ -349,6 +630,7 @@
     @media (max-width: 768px) {
       nav { padding: 12px 5%; }
       .nav-phone-link { display: none; }
+      .nav-menu { top: 58px; }
       section { padding: 64px 5%; }
 
       #hero { padding-bottom:80px; }
@@ -367,11 +649,14 @@
 
       .proc-row { grid-template-columns: 1fr; gap: 12px; }
 
-      .gal-grid { grid-template-columns: repeat(2,1fr); grid-auto-rows: 180px; }
-      .gal-grid .g.t2 { grid-row: span 2; }
+      .gal-grid { grid-template-columns: 1fr; }
 
       .area-inner { grid-template-columns: 1fr; gap: 36px; }
       .area-map { height: 240px; }
+      .area-cols { grid-template-columns: 1fr; }
+
+      .contact-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
 
       footer { flex-direction: column; text-align: center; }
       .mob-call { display: flex; }
@@ -379,7 +664,6 @@
     }
 
     @media (max-width: 480px) {
-      .gal-grid { grid-template-columns: 1fr 1fr; grid-auto-rows: 150px; }
       .hero-strip span { display: none; }
       .nav-btn { padding: 8px 14px; font-size: .75rem; }
     }
@@ -387,12 +671,46 @@
 </head>
 <body>
 
+<!-- ─── SVG SPRITE (ikony) ─── -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.59 2.59A2 2 0 0 0 11.17 2H4a2 2 0 0 0-2 2v7.17a2 2 0 0 0 .59 1.41l8.7 8.7a2.43 2.43 0 0 0 3.42 0l6.58-6.58a2.43 2.43 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r="1.2"/></symbol>
+  <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M8 15h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10a2 2 0 0 1 .71-1.53l7-6a2 2 0 0 1 2.58 0l7 6A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 21v-7a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v7"/></symbol>
+  <symbol id="i-calculator" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" x2="16" y1="6" y2="6"/><line x1="8" x2="8" y1="14" y2="14"/><line x1="12" x2="12" y1="14" y2="14"/><line x1="16" x2="16" y1="14" y2="14"/><line x1="8" x2="8" y1="18" y2="18"/><line x1="12" x2="12" y1="18" y2="18"/><line x1="16" x2="16" y1="18" y2="18"/></symbol>
+  <symbol id="i-thermometer" viewBox="0 0 24 24"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6"/></symbol>
+  <symbol id="i-mute" viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+  <symbol id="i-wind" viewBox="0 0 24 24"><path d="M12.8 19.6A2 2 0 1 0 14 16H2"/><path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/><path d="M9.8 4.4A2 2 0 1 1 11 8H2"/></symbol>
+  <symbol id="i-roof" viewBox="0 0 24 24"><path d="m2 11 10-7 10 7"/><path d="M5 10v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9"/><path d="M9 20v-5a3 3 0 0 1 6 0v5"/></symbol>
+  <symbol id="i-foundation" viewBox="0 0 24 24"><path d="m3 9 9-6 9 6"/><path d="M5 8v7h14V8"/><rect x="2" y="15" width="20" height="6" rx="1"/></symbol>
+  <symbol id="i-brush" viewBox="0 0 24 24"><rect width="16" height="6" x="2" y="2" rx="2"/><path d="M10 16v-2a2 2 0 0 1 2-2h8a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect width="4" height="6" x="8" y="16" rx="1"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-helmet" viewBox="0 0 24 24"><path d="M2 18a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1v-2a8 8 0 0 0-8-8h-4a8 8 0 0 0-8 8z"/><path d="M10 8V5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3"/><line x1="2" x2="22" y1="19" y2="19"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 14h6"/><path d="M9 18h4"/></symbol>
+</svg>
+
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" class="logo">Bud<span>Mar</span><span class="logo-sub">Ocieplenia</span></a>
+  <a href="#hero" class="logo" aria-label="MARBUD Ocieplenia — strona główna"><img src="MARBUD-logo-bialy.png" alt="MARBUD Ocieplenia Warszawa" class="logo-img"/></a>
+  <div class="nav-menu" id="navMenu">
+    <a href="#services" class="nav-link">Usługi</a>
+    <a href="#gallery" class="nav-link">Realizacje</a>
+    <a href="#area" class="nav-link">Obszar</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+  </div>
   <div class="nav-cta">
-    <a href="tel:535685720" class="nav-phone-link">535 685 720</a>
+    <a href="tel:+48535685720" class="nav-phone-link">535 685 720</a>
     <a href="#contact" class="nav-btn">Wycena →</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Otwórz menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -400,39 +718,46 @@
 <section id="hero">
   <div class="hero-img"></div>
   <div class="hero-inner">
-    <div class="hero-badge">Kolno i okolice – specjaliści od ociepleń</div>
+    <div class="hero-badge">Ocieplenia i termomodernizacja — cała Warszawa</div>
     <h1>
-      <span class="light">Ocieplamy</span><br>
-      <span class="ora">domy</span><br>
-      i budynki.
+      <span class="light">Ocieplenia domów</span><br>
+      <span class="ora">Warszawa</span>
     </h1>
-    <p class="hero-lead">Kompleksowe ocieplenia ścian zewnętrznych metodą BSO i wełną mineralną. Własne rusztowania, hurtowe ceny materiałów – taniej i solidniej.</p>
+    <p class="hero-lead">Kompleksowe ocieplenia ścian, poddaszy i fundamentów — styropian, wełna mineralna i pianka PUR. Własne rusztowania i hurtowe ceny materiałów. Działamy na Mokotowie i w całej Warszawie.</p>
     <div class="hero-chips">
-      <div class="chip">🏗️ Własne rusztowania 800 m²</div>
-      <div class="chip">💰 Hurtowe ceny materiałów</div>
-      <div class="chip">✅ 100% zadowolonych klientów</div>
+      <div class="chip"><svg class="ico"><use href="#i-clipboard"/></svg> Bezpłatna wycena w 24h</div>
+      <div class="chip"><svg class="ico"><use href="#i-award"/></svg> 15+ lat doświadczenia</div>
+      <div class="chip"><svg class="ico"><use href="#i-pin"/></svg> Cała Warszawa i okolice</div>
     </div>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-orange">Bezpłatna wycena ↗</a>
-      <a href="#gallery" class="btn btn-outline">Zobacz realizacje</a>
+      <a href="tel:+48535685720" class="btn btn-outline"><svg class="ico"><use href="#i-phone"/></svg> 535 685 720</a>
     </div>
   </div>
   <div class="hero-strip">
     <span>Zadzwoń teraz –</span>
-    <a href="tel:535685720">535 685 720</a>
+    <a href="tel:+48535685720">535 685 720</a>
     <span>– wycena w 24h, bezpłatna</span>
   </div>
 </section>
 
+<!-- PASEK ZAUFANIA -->
+<div class="trust-bar">
+  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-award"/></svg> <b>15+ lat</b> doświadczenia</div>
+  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-shield"/></svg> Gwarancja na wykonanie</div>
+  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-receipt"/></svg> NIP <b>849-137-50-08</b></div>
+  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-pin"/></svg> Cała Warszawa i okolice</div>
+</div>
+
 <!-- STATS BAR -->
 <div class="stats-bar">
   <div class="stat-item rv">
-    <div class="stat-num">800</div>
-    <div class="stat-lbl">m² własnych rusztowań</div>
-  </div>
-  <div class="stat-item rv d1">
     <div class="stat-num">15+</div>
     <div class="stat-lbl">lat doświadczenia</div>
+  </div>
+  <div class="stat-item rv d1">
+    <div class="stat-num">800</div>
+    <div class="stat-lbl">m² własnych rusztowań</div>
   </div>
   <div class="stat-item rv d2">
     <div class="stat-num">100%</div>
@@ -448,9 +773,9 @@
 <section id="why">
   <div class="why-wrap">
     <div class="why-photos rv">
-      <div class="ph span2"><img src="2.jpg" alt="Ocieplenie domu" loading="lazy"/></div>
-      <div class="ph"><img src="3.jpg" alt="Elewacja po ociepleniu" loading="lazy"/></div>
-      <div class="ph"><img src="4.jpg" alt="Prace elewacyjne" loading="lazy"/></div>
+      <div class="ph span2"><img src="2.jpg" alt="Ocieplenie domu jednorodzinnego w Warszawie" loading="lazy"/></div>
+      <div class="ph"><img src="3.jpg" alt="Elewacja po ociepleniu — termomodernizacja Warszawa" loading="lazy"/></div>
+      <div class="ph"><img src="4.jpg" alt="Prace elewacyjne przy ociepleniu domu" loading="lazy"/></div>
     </div>
     <div>
       <span class="sec-tag rv">Dlaczego warto</span>
@@ -458,19 +783,19 @@
       <div class="sec-bar rv"></div>
       <div class="why-list">
         <div class="wi rv">
-          <div class="wi-icon">🌡️</div>
+          <div class="wi-icon"><svg class="ico"><use href="#i-thermometer"/></svg></div>
           <div><div class="wi-t">Do 40% niższe rachunki za ogrzewanie</div><div class="wi-d">Dobra izolacja zatrzymuje ciepło zimą i chroni przed upałem latem – oszczędzasz przez całe lata.</div></div>
         </div>
         <div class="wi rv d1">
-          <div class="wi-icon">🏠</div>
+          <div class="wi-icon"><svg class="ico"><use href="#i-home"/></svg></div>
           <div><div class="wi-t">Wyższa wartość nieruchomości</div><div class="wi-d">Ocieplony budynek z wyższą klasą energetyczną jest wart więcej przy sprzedaży lub wynajmie.</div></div>
         </div>
         <div class="wi rv d2">
-          <div class="wi-icon">🌿</div>
+          <div class="wi-icon"><svg class="ico"><use href="#i-leaf"/></svg></div>
           <div><div class="wi-t">Koniec z wilgocią i pleśnią</div><div class="wi-d">Prawidłowa termoizolacja eliminuje mostki termiczne i zapobiega powstawaniu pleśni na ścianach.</div></div>
         </div>
         <div class="wi rv d3">
-          <div class="wi-icon">🔇</div>
+          <div class="wi-icon"><svg class="ico"><use href="#i-mute"/></svg></div>
           <div><div class="wi-t">Lepsza akustyka wnętrz</div><div class="wi-d">Wełna mineralna redukuje hałas z zewnątrz – spokój i cisza w domu przez cały rok.</div></div>
         </div>
       </div>
@@ -483,46 +808,46 @@
   <div style="display:flex; justify-content:space-between; align-items:flex-end; flex-wrap:wrap; gap:16px;">
     <div>
       <span class="sec-tag rv">Co wykonujemy</span>
-      <h2 class="sec-title rv">Zakres usług</h2>
+      <h2 class="sec-title rv">Zakres usług ociepleń</h2>
     </div>
     <a href="#contact" class="btn btn-orange rv">Zapytaj o wycenę →</a>
   </div>
   <div class="srv-grid">
     <div class="srv-card rv">
-      <span class="srv-em">🏗️</span>
-      <div class="srv-name">Metoda BSO – styropian</div>
-      <p class="srv-desc">Bezspoinowy System Ociepleń ze styropianem EPS – najbardziej ekonomiczna i popularna metoda. Doskonałe parametry termoizolacyjne.</p>
+      <span class="srv-em"><svg class="ico"><use href="#i-building"/></svg></span>
+      <h3 class="srv-name">Ocieplenie styropianem (BSO)</h3>
+      <p class="srv-desc">Bezspoinowy System Ociepleń ze styropianem EPS – najbardziej ekonomiczna i popularna metoda ocieplenia domu jednorodzinnego. Doskonałe parametry termoizolacyjne i sprawdzona trwałość.</p>
       <div class="srv-pill">Domy jednorodzinne</div>
     </div>
     <div class="srv-card rv d1">
-      <span class="srv-em">🧱</span>
-      <div class="srv-name">Wełna mineralna</div>
-      <p class="srv-desc">Izolacja wełną skalną lub szklaną – dla lepszej akustyki i odporności ogniowej. Zdrowy mikroklimat wnętrz.</p>
-      <div class="srv-pill">Budownictwo wielorodzinne</div>
+      <span class="srv-em"><svg class="ico"><use href="#i-layers"/></svg></span>
+      <h3 class="srv-name">Ocieplenie wełną mineralną</h3>
+      <p class="srv-desc">Izolacja wełną skalną lub szklaną – dla lepszej akustyki i odporności ogniowej. Paroprzepuszczalna, zapewnia zdrowy mikroklimat ścian. Polecana także w zabudowie wielorodzinnej.</p>
+      <div class="srv-pill">Akustyka i ogień</div>
     </div>
     <div class="srv-card rv d2">
-      <span class="srv-em">🏡</span>
-      <div class="srv-name">Budynki gospodarcze</div>
-      <p class="srv-desc">Ocieplamy garaże, stodoły, warsztaty. Właściwa izolacja chroni mienie i obniża koszty eksploatacji.</p>
-      <div class="srv-pill">Rolnicy i przedsiębiorcy</div>
+      <span class="srv-em"><svg class="ico"><use href="#i-wind"/></svg></span>
+      <h3 class="srv-name">Ocieplenie pianką PUR</h3>
+      <p class="srv-desc">Natrysk pianki poliuretanowej – maksymalna szczelność i brak mostków termicznych. Idealna na poddasza, stropodachy i powierzchnie o nietypowych kształtach, gdzie styropian się nie sprawdzi.</p>
+      <div class="srv-pill">Szczelna izolacja</div>
     </div>
     <div class="srv-card rv">
-      <span class="srv-em">🎨</span>
-      <div class="srv-name">Elewacja i tynk</div>
-      <p class="srv-desc">Wykończenie tynkami silikonowymi, mineralnymi lub silikatowymi. Dowolna faktura i kolor z palety RAL.</p>
-      <div class="srv-pill">Kompleksowe wykończenie</div>
-    </div>
-    <div class="srv-card rv d1">
-      <span class="srv-em">🪟</span>
-      <div class="srv-name">Ocieplenie poddasza</div>
-      <p class="srv-desc">Izolacja stropodachów i skosów metodą wdmuchiwania lub układania wełny. Górna bariera termiczna to duże oszczędności.</p>
+      <span class="srv-em"><svg class="ico"><use href="#i-roof"/></svg></span>
+      <h3 class="srv-name">Ocieplenie poddasza</h3>
+      <p class="srv-desc">Izolacja skosów, stropodachów i poddaszy metodą wdmuchiwania lub układania wełny oraz natrysku pianki PUR. Górna bariera termiczna to jedne z największych oszczędności w domu.</p>
       <div class="srv-pill">Dach i poddasze</div>
     </div>
+    <div class="srv-card rv d1">
+      <span class="srv-em"><svg class="ico"><use href="#i-foundation"/></svg></span>
+      <h3 class="srv-name">Ocieplenie fundamentów</h3>
+      <p class="srv-desc">Izolacja ścian fundamentowych i cokołu płytami XPS lub styropianem wodoodpornym. Ogranicza straty ciepła w dolnej części budynku i chroni przed wilgocią z gruntu.</p>
+      <div class="srv-pill">Strefa cokołowa</div>
+    </div>
     <div class="srv-card rv d2">
-      <span class="srv-em">🔧</span>
-      <div class="srv-name">Renowacja ociepleń</div>
-      <p class="srv-desc">Naprawiamy i modernizujemy stare ocieplenia. Likwidacja spękań i odparzeń tynku – bez wyburzeń.</p>
-      <div class="srv-pill">Modernizacje</div>
+      <span class="srv-em"><svg class="ico"><use href="#i-brush"/></svg></span>
+      <h3 class="srv-name">Elewacja, tynk i renowacja</h3>
+      <p class="srv-desc">Wykończenie tynkami silikonowymi, mineralnymi lub silikatowymi w dowolnym kolorze. Naprawiamy też stare ocieplenia – likwidacja spękań i odparzeń tynku bez wyburzeń.</p>
+      <div class="srv-pill">Wykończenie i naprawy</div>
     </div>
   </div>
 </section>
@@ -537,28 +862,28 @@
   <div class="adv-wrap">
     <div class="adv-card hero-adv rv">
       <div class="adv-bg-num">800</div>
-      <div class="adv-ico">🏗️</div>
+      <div class="adv-ico"><svg class="ico"><use href="#i-building"/></svg></div>
       <div class="adv-title">Własne rusztowania 800 m²</div>
       <p class="adv-text">Mamy własny kompletny zestaw rusztowań – zero kosztów wynajmu. Prace startują bez opóźnień, a Ty nie przepłacasz. To realna oszczędność od pierwszego dnia.</p>
       <div class="adv-tag">Brak kosztów wynajmu rusztowań</div>
     </div>
     <div class="adv-card rv d1">
-      <div class="adv-bg-num">📦</div>
-      <div class="adv-ico">💰</div>
+      <div class="adv-bg-num">zł</div>
+      <div class="adv-ico"><svg class="ico"><use href="#i-wallet"/></svg></div>
       <div class="adv-title">Hurtowe ceny materiałów</div>
       <p class="adv-text">Styropian, wełna, tynki, siatki – kupujemy bezpośrednio od producentów w cenach hurtowych. Oszczędność na materiałach trafia do Twojej kieszeni.</p>
       <div class="adv-tag">Niższe ceny niż w markecie</div>
     </div>
     <div class="adv-card rv d2">
       <div class="adv-bg-num">15</div>
-      <div class="adv-ico">👷</div>
+      <div class="adv-ico"><svg class="ico"><use href="#i-helmet"/></svg></div>
       <div class="adv-title">15+ lat doświadczenia</div>
-      <p class="adv-text">Tylko sprawdzeni fachowcy z wieloletnią praktyką. Setki zrealizowanych ociepleń w Kolnie i okolicach – żadnych podwykonawców, żadnych niespodzianek.</p>
-      <div class="adv-tag">100% zadowolonych klientów</div>
+      <p class="adv-text">Tylko sprawdzeni fachowcy z wieloletnią praktyką. Setki zrealizowanych ociepleń – żadnych podwykonawców, żadnych niespodzianek, robota zgodna ze sztuką.</p>
+      <div class="adv-tag">Doświadczona ekipa</div>
     </div>
     <div class="adv-card rv d3">
       <div class="adv-bg-num">0zł</div>
-      <div class="adv-ico">📋</div>
+      <div class="adv-ico"><svg class="ico"><use href="#i-clipboard"/></svg></div>
       <div class="adv-title">Bezpłatna wycena</div>
       <p class="adv-text">Przyjeżdżamy, mierzymy i przygotowujemy szczegółowy kosztorys zupełnie za darmo – bez opłat i zobowiązań. Przejrzysta cena zanim zaczniesz.</p>
       <div class="adv-tag">Wycena 0 zł – bez zobowiązań</div>
@@ -570,53 +895,89 @@
 <section id="process">
   <div style="text-align:center; max-width:500px; margin:0 auto;">
     <span class="sec-tag rv">Jak to działa</span>
-    <h2 class="sec-title rv">Od telefonu do<br>gotowego ocieplenia</h2>
+    <h2 class="sec-title rv">Od audytu do<br>gotowego ocieplenia</h2>
     <div class="sec-bar rv" style="margin:14px auto 0;"></div>
   </div>
   <div class="proc-row">
     <div class="proc-card rv">
       <div class="proc-num">01</div>
-      <div class="proc-title">Kontakt</div>
-      <p class="proc-desc">Dzwonisz lub piszesz – omawiamy zakres i umawiamy wizję lokalną w Kolnie lub okolicach</p>
+      <h3 class="proc-title">Audyt i pomiar</h3>
+      <p class="proc-desc">Przyjeżdżamy na wizję lokalną w Warszawie, oceniamy budynek i dobieramy metodę ocieplenia oraz grubość izolacji</p>
     </div>
     <div class="proc-card rv d1">
       <div class="proc-num">02</div>
-      <div class="proc-title">Pomiar i wycena</div>
-      <p class="proc-desc">Mierzymy budynek, dobieramy metodę i dostarczamy bezpłatny, szczegółowy kosztorys</p>
+      <h3 class="proc-title">Bezpłatna wycena</h3>
+      <p class="proc-desc">Dostajesz szczegółowy, przejrzysty kosztorys — bez opłat i bez zobowiązań</p>
     </div>
     <div class="proc-card rv d2">
       <div class="proc-num">03</div>
-      <div class="proc-title">Montaż rusztowań</div>
-      <p class="proc-desc">Stawiamy własne rusztowania – szybko i bezpiecznie, bez żadnych dodatkowych kosztów</p>
+      <h3 class="proc-title">Ocieplenie</h3>
+      <p class="proc-desc">Stawiamy własne rusztowania i wykonujemy ocieplenie oraz elewację terminowo, zgodnie ze sztuką i gwarancją</p>
     </div>
     <div class="proc-card rv d3">
       <div class="proc-num">04</div>
-      <div class="proc-title">Ocieplenie gotowe</div>
-      <p class="proc-desc">Wykonujemy ocieplenie i elewację terminowo i solidnie – zgodnie z ustaleniami i gwarancją</p>
+      <h3 class="proc-title">Odbiór i gwarancja</h3>
+      <p class="proc-desc">Sprzątamy teren, przekazujemy gotową elewację, wystawiamy fakturę i obejmujemy wykonanie gwarancją</p>
     </div>
   </div>
 </section>
 
-<!-- GALLERY – 10 zdjęć, same zdjęcia bez podpisów -->
+<!-- REALIZACJE -->
 <section id="gallery">
   <div class="gal-intro">
     <div>
       <span class="sec-tag rv">Portfolio</span>
       <h2 class="sec-title rv">Nasze realizacje</h2>
     </div>
-    <p class="gal-note rv">Realizujemy ocieplenia w Kolnie i całych okolicach – domy jednorodzinne i budynki gospodarcze.</p>
+    <p class="gal-note rv">Ocieplenia domów jednorodzinnych i budynków gospodarczych. Wkrótce uzupełnimy galerię o realizacje z Warszawy i okolic.</p>
   </div>
+
+  <!-- DO UZUPEŁNIENIA: dla każdej realizacji wpisz prawdziwą DZIELNICĘ/MIEJSCOWOŚĆ, metraż (m²)
+       i materiał. NIE przypisuj zdjęciom warszawskich dzielnic, jeśli zdjęcie nie jest z tej dzielnicy.
+       Po wykonaniu pierwszych zleceń w Warszawie podmień zdjęcia i opisy na realne. -->
   <div class="gal-grid rv">
-    <div class="g t2"><img src="1.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="2.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="3.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="4.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g t2"><img src="5.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="6.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="7.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="8.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="9.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
-    <div class="g"><img src="10.jpg" alt="Realizacja ocieplenia" loading="lazy"/></div>
+    <div class="real-card">
+      <div class="real-photo"><img src="1.jpg" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Dom jednorodzinny <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
+    <div class="real-card">
+      <div class="real-photo"><img src="2.jpg" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Elewacja domu <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Tynk silikonowy</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
+    <div class="real-card">
+      <div class="real-photo"><img src="3.jpg" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Ocieplenie ścian <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Wełna mineralna</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
+    <div class="real-card">
+      <div class="real-photo"><img src="4.jpg" alt="Realizacja termomodernizacji budynku" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Termomodernizacja <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
+    <div class="real-card">
+      <div class="real-photo"><img src="5.jpg" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Dom z elewacją <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Tynk mineralny</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
+    <div class="real-card">
+      <div class="real-photo"><img src="6.jpg" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></div>
+      <div class="real-meta">
+        <div class="real-loc">Budynek gospodarczy <!-- DZIELNICA --></div>
+        <div class="real-tags"><span class="real-tag">Styropian</span><span class="real-tag">~__ m²</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -625,60 +986,158 @@
   <div class="area-inner">
     <div>
       <span class="sec-tag rv">Gdzie działamy</span>
-      <h2 class="sec-title rv">Pisz i okolice</h2>
+      <h2 class="sec-title rv">Warszawa i okolice</h2>
       <div class="sec-bar rv"></div>
-      <div class="area-list rv">
-        <div class="area-item">Pisz</div>
-        <div class="area-item">Kolno</div>
-        <div class="area-item">Szczuczyn</div>
-        <div class="area-item">Łomża</div>
-        <div class="area-item">Biała Piska</div>
-        <div class="area-item">Ruciane-Nida</div>
+      <div class="area-cols rv">
+        <div class="area-item">Mokotów</div>
+        <div class="area-item">Wawer</div>
+        <div class="area-item">Wesoła</div>
+        <div class="area-item">Ursynów</div>
+        <div class="area-item">Wilanów</div>
+        <div class="area-item">Białołęka</div>
+        <div class="area-item">Włochy</div>
+        <div class="area-item">Ursus</div>
+        <div class="area-item">Bemowo</div>
+        <div class="area-item">Targówek</div>
+        <div class="area-item">Piaseczno</div>
+        <div class="area-item">Józefów</div>
+        <div class="area-item">Marki</div>
+        <div class="area-item">Ząbki</div>
       </div>
-      <div class="area-note rv d1">Realizujemy zlecenia w promieniu ok. 80 km od Kolna. Jeśli nie widzisz swojej miejscowości – zadzwoń, na pewno dogadamy się i przyjedziemy.</div>
+      <p class="area-prose rv">Siedzibę mamy na <strong>Mokotowie</strong>, ale ocieplenia domów wykonujemy na terenie <strong>całej Warszawy</strong> oraz w miejscowościach podwarszawskich. Szczególnie często pracujemy w dzielnicach z zabudową jednorodzinną — na <strong>Wawrze</strong>, <strong>Wesołej</strong>, <strong>Ursynowie</strong>, <strong>Wilanowie</strong>, <strong>Białołęce</strong>, <strong>Włochach</strong>, <strong>Ursusie</strong>, <strong>Bemowie</strong> i <strong>Targówku</strong>, a także w <strong>Piasecznie</strong>, <strong>Józefowie</strong>, <strong>Markach</strong> i <strong>Ząbkach</strong>.</p>
+      <div class="area-note rv d1">Nie widzisz swojej dzielnicy lub miejscowości? Zadzwoń – obsługujemy całą aglomerację warszawską, na pewno do Ciebie dojedziemy.</div>
     </div>
-    <div class="area-map rv d2">
-      <img src="5.jpg" alt="Ocieplenia Kolno okolice" loading="lazy"/>
+    <!-- Mapa ładuje się dopiero po zgodzie na cookies (RODO). data-src podmień na embed
+         z Twojej wizytówki Google, gdy będzie gotowa (Udostępnij → Umieść mapę). -->
+    <div class="area-map rv d2" id="mapHolder" data-src="https://www.google.com/maps?q=Domaniewska%2013%2F15,%2002-672%20Warszawa&output=embed">
+      <div class="map-ph" id="mapPlaceholder">
+        <p>Mapa Google ładuje pliki cookie firmy Google. Pokaż mapę, aby ją załadować.</p>
+        <button type="button" class="btn btn-orange" id="mapLoadBtn">Pokaż mapę</button>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- CONTACT CTA -->
+<!-- FAQ -->
+<section id="faq">
+  <div style="text-align:center; max-width:560px; margin:0 auto;">
+    <span class="sec-tag rv">Pytania i odpowiedzi</span>
+    <h2 class="sec-title rv">Najczęstsze pytania</h2>
+    <div class="sec-bar rv" style="margin:14px auto 0;"></div>
+  </div>
+  <div class="faq-wrap rv">
+    <details class="faq-item">
+      <summary>Ile kosztuje ocieplenie domu za m²?</summary>
+      <div class="faq-a">Cena zależy od metody (styropian, wełna, pianka PUR), grubości izolacji, stanu ścian i rodzaju tynku. Orientacyjnie ocieplenie liczone jest za m² powierzchni elewacji, a dokładny kosztorys podajemy bezpłatnie po pomiarze budynku.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Jak długo trwa ocieplenie domu jednorodzinnego?</summary>
+      <div class="faq-a">Standardowe ocieplenie domu jednorodzinnego metodą BSO trwa zwykle od 1 do 3 tygodni, w zależności od metrażu elewacji, pogody i zakresu prac wykończeniowych. Dokładny termin ustalamy przy wycenie.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Czy na wykonane ocieplenie jest gwarancja?</summary>
+      <div class="faq-a">Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy gwarancji — szczegółowe warunki ustalamy w umowie przed rozpoczęciem robót. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Styropian czy pianka PUR — co wybrać?</summary>
+      <div class="faq-a">Styropian (metoda BSO) to najbardziej ekonomiczne i sprawdzone rozwiązanie dla elewacji domów jednorodzinnych. Pianka PUR sprawdza się tam, gdzie liczy się szczelność i brak mostków termicznych — m.in. przy poddaszach, stropodachach i miejscach o nietypowych kształtach. Wełna mineralna wybierana jest dla lepszej akustyki i odporności ogniowej. Dobór metody zależy od budynku — doradzamy przy wycenie.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Czy ocieplacie poddasza i fundamenty?</summary>
+      <div class="faq-a">Tak. Poza ociepleniem ścian zewnętrznych wykonujemy ocieplenie poddaszy i stropodachów (wełna lub pianka PUR) oraz ocieplenie fundamentów i ścian fundamentowych, które ogranicza straty ciepła w dolnej części budynku.</div>
+    </details>
+    <details class="faq-item">
+      <summary>Jaki obszar obsługujecie?</summary>
+      <div class="faq-a">Działamy na terenie całej Warszawy — z siedzibą na Mokotowie — oraz w okolicach podwarszawskich. Realizujemy ocieplenia m.in. na Wawrze, Wesołej, Ursynowie, Wilanowie, Białołęce, Włochach, Ursusie, Bemowie i Targówku, a także w Piasecznie, Józefowie, Markach i Ząbkach.</div>
+    </details>
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
   <div class="contact-inner">
-    <h2 class="rv">Bezpłatna wycena<br><span>w 24 godziny</span></h2>
-    <p class="rv">Zadzwoń lub napisz – przyjedziemy, zmierzymy i wycenimy bez żadnych opłat. Działamy w Kolnie i okolicach.</p>
-    <div class="contact-methods rv">
-      <a href="tel:535685720" class="c-card">
-        <div class="c-card-lbl">Telefon</div>
-        <div class="c-card-val">535 685 720</div>
-        <div class="c-card-sub">Pon – Pt: 7:00–18:00</div>
-      </a>
-      <a href="mailto:budmar.info@gmail.com" class="c-card">
-        <div class="c-card-lbl">E-mail</div>
-        <div class="c-card-val" style="font-size:1.15rem;">budmar.info@gmail.com</div>
-        <div class="c-card-sub">Odpowiadamy w 24h</div>
-      </a>
-      <div class="c-card" style="cursor:default;">
-        <div class="c-card-lbl">Adres</div>
-        <div class="c-card-val" style="font-size:1.15rem;">ul. Witosa 3</div>
-        <div class="c-card-sub">18-500 Kolno</div>
+    <div class="contact-head">
+      <h2 class="rv">Bezpłatna wycena<br><span>w 24 godziny</span></h2>
+      <p class="rv">Zostaw numer lub zadzwoń – przyjedziemy, zmierzymy i wycenimy bez żadnych opłat. Działamy na Mokotowie i w całej Warszawie.</p>
+    </div>
+    <div class="contact-grid">
+      <!-- FORMULARZ — Netlify Forms (działa po wdrożeniu na Netlify, bez backendu).
+           DO UZUPEŁNIENIA: jeśli hosting to NIE Netlify, podmień obsługę formularza
+           (np. Formspree) — same pola zostają. -->
+      <form class="form-card rv" name="wycena" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="wycena"/>
+        <p class="hp"><label>Nie wypełniaj: <input name="bot-field"/></label></p>
+        <h3>Zamów bezpłatną wycenę</h3>
+        <p class="form-sub">Odpowiadamy w ciągu 24 godzin.</p>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-name">Imię i nazwisko</label>
+            <input id="f-name" type="text" name="imie" required/>
+          </div>
+          <div class="field">
+            <label for="f-phone">Telefon</label>
+            <input id="f-phone" type="tel" name="telefon" required/>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="f-area">Dzielnica / miejscowość</label>
+            <input id="f-area" type="text" name="lokalizacja" placeholder="np. Wawer"/>
+          </div>
+          <div class="field">
+            <label for="f-type">Zakres prac</label>
+            <select id="f-type" name="zakres">
+              <option value="">— wybierz —</option>
+              <option>Ocieplenie ścian (styropian)</option>
+              <option>Ocieplenie wełną mineralną</option>
+              <option>Pianka PUR</option>
+              <option>Ocieplenie poddasza</option>
+              <option>Ocieplenie fundamentów</option>
+              <option>Elewacja i tynk</option>
+              <option>Inne</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="f-msg">Wiadomość (metraż, rodzaj budynku)</label>
+          <textarea id="f-msg" name="wiadomosc" placeholder="np. dom jednorodzinny ok. 120 m², ocieplenie styropianem + tynk"></textarea>
+        </div>
+        <button type="submit" class="btn btn-orange">Wyślij zapytanie ↗</button>
+        <p class="form-note">Wysyłając formularz, zgadzasz się na kontakt w sprawie wyceny. Twoje dane przetwarzamy zgodnie z <a href="polityka-prywatnosci.html">polityką prywatności</a>.</p>
+      </form>
+
+      <div class="contact-side">
+        <a href="tel:+48535685720" class="c-card rv">
+          <div class="c-card-lbl">Telefon</div>
+          <div class="c-card-val"><svg class="ico"><use href="#i-phone"/></svg> 535 685 720</div>
+          <div class="c-card-sub">Pon – Pt: 7:00–18:00</div>
+        </a>
+        <a href="mailto:budmar.info@gmail.com" class="c-card rv d1">
+          <div class="c-card-lbl">E-mail</div>
+          <div class="c-card-val" style="font-size:1.15rem;">budmar.info@gmail.com</div>
+          <div class="c-card-sub">Odpowiadamy w 24h</div>
+        </a>
+        <a href="https://www.google.com/maps?q=Domaniewska+13%2F15,+02-672+Warszawa" target="_blank" rel="noopener" class="c-card rv d2">
+          <div class="c-card-lbl">Adres</div>
+          <div class="c-card-val" style="font-size:1.15rem;">ul. Domaniewska 13/15</div>
+          <div class="c-card-sub">02-672 Warszawa (Mokotów) · cała Warszawa i okolice</div>
+        </a>
       </div>
     </div>
-    <a href="tel:535685720" class="big-call rv">
-      <span>📞 535 685 720</span>
-      <div>
-        <span class="big-call-sub">Zadzwoń teraz</span>
-      </div>
-    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <a href="#hero" class="f-logo">Bud<span>Mar</span></a>
-  <p>© 2025 BudMar Ocieplenia · ul. Witosa 3, 18-500 Kolno</p>
-
+  <a href="#hero" class="f-logo" aria-label="MARBUD Ocieplenia"><img src="MARBUD-logo-bialy.png" alt="MARBUD Ocieplenia" class="f-logo-img"/></a>
+  <p>© 2026 MARBUD Ocieplenia · ul. Domaniewska 13/15, 02-672 Warszawa · NIP 8491375008 · REGON 525485703 · tel. 535 685 720</p>
+  <div class="f-links">
+    <a href="#services">Usługi</a>
+    <a href="#gallery">Realizacje</a>
+    <a href="#contact">Kontakt</a>
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+    <a href="polityka-prywatnosci.html#cookies">Cookies</a>
+  </div>
 </footer>
 
 <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Na górę">
@@ -686,20 +1145,80 @@
 </button>
 
 <div class="mob-call">
-  <a href="tel:535685720">📞 Zadzwoń: 535 685 720</a>
+  <a href="tel:+48535685720"><svg class="ico"><use href="#i-phone"/></svg> Zadzwoń: 535 685 720</a>
+</div>
+
+<!-- COOKIE BANNER (RODO) -->
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-label="Zgoda na pliki cookie">
+  <p class="cookie-text">Używamy plików cookie niezbędnych do działania strony oraz — za Twoją zgodą — cookie zewnętrzne (Mapy Google). Szczegóły w <a href="polityka-prywatnosci.html#cookies">Polityce prywatności i cookies</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="cookie-btn cookie-reject" id="cookieReject">Tylko niezbędne</button>
+    <button type="button" class="cookie-btn cookie-accept" id="cookieAccept">Akceptuję wszystkie</button>
+  </div>
 </div>
 
 <script>
   const nav = document.getElementById('nav');
   const btt = document.getElementById('btt');
+  const navToggle = document.getElementById('navToggle');
+
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 50);
     btt.classList.toggle('show', window.scrollY > 500);
   });
+
+  // menu mobilne
+  navToggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('menu-open');
+    navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('#navMenu a').forEach(a =>
+    a.addEventListener('click', () => {
+      nav.classList.remove('menu-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    })
+  );
+
+  // reveal on scroll
   const io = new IntersectionObserver(e => {
     e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // ── COOKIES (RODO) + warunkowe ładowanie Mapy Google ──
+  (function () {
+    const KEY = 'marbud_cookie_consent';
+    const bar = document.getElementById('cookieBar');
+    const holder = document.getElementById('mapHolder');
+
+    function loadMap() {
+      if (!holder || holder.querySelector('iframe')) return;
+      const ph = document.getElementById('mapPlaceholder');
+      if (ph) ph.remove();
+      const ifr = document.createElement('iframe');
+      ifr.src = holder.getAttribute('data-src');
+      ifr.title = 'Mapa — MARBUD Ocieplenia, Domaniewska 13/15, Warszawa';
+      ifr.loading = 'lazy';
+      ifr.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+      ifr.allowFullscreen = true;
+      holder.appendChild(ifr);
+    }
+
+    const choice = localStorage.getItem(KEY);
+    if (choice) {
+      bar.classList.add('hidden');
+      if (choice === 'all') loadMap();
+    }
+    document.getElementById('cookieAccept').addEventListener('click', () => {
+      localStorage.setItem(KEY, 'all'); bar.classList.add('hidden'); loadMap();
+    });
+    document.getElementById('cookieReject').addEventListener('click', () => {
+      localStorage.setItem(KEY, 'essential'); bar.classList.add('hidden');
+    });
+    // ręczne załadowanie mapy (przycisk w sekcji obszaru) — traktowane jako zgoda na mapę
+    const mb = document.getElementById('mapLoadBtn');
+    if (mb) mb.addEventListener('click', loadMap);
+  })();
 </script>
 </body>
 </html>
