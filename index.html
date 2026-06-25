@@ -1169,10 +1169,13 @@
   const nav = document.getElementById('nav');
   const btt = document.getElementById('btt');
   const navToggle = document.getElementById('navToggle');
+  const mobCall = document.querySelector('.mob-call');
 
   window.addEventListener('scroll', () => {
     nav.classList.toggle('scrolled', window.scrollY > 50);
     btt.classList.toggle('show', window.scrollY > 500);
+    // dolny pasek „Zadzwoń" (mobile): ukryty na górze, pojawia się po przewinięciu
+    if (mobCall) mobCall.classList.toggle('show', window.scrollY > 400);
   });
 
   // menu mobilne
@@ -1192,17 +1195,6 @@
     e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
-
-  // ── Pasek „Zadzwoń" (mobile): pokazuje się po przewinięciu obok numeru w hero ──
-  (function () {
-    const mobCall = document.querySelector('.mob-call');
-    const heroStrip = document.querySelector('.hero-strip');
-    if (!mobCall || !heroStrip) return;
-    const mio = new IntersectionObserver(entries => {
-      entries.forEach(x => mobCall.classList.toggle('show', !x.isIntersecting));
-    }, { threshold: 0 });
-    mio.observe(heroStrip);
-  })();
 
   // ── COOKIES (RODO) + warunkowe ładowanie Mapy Google ──
   (function () {
