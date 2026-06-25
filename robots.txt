@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Nie indeksuj strony polityki prywatności (ma też meta noindex)
+Disallow: /polityka-prywatnosci.html
+
+Sitemap: https://ocieplenia.warszawa.pl/sitemap.xml

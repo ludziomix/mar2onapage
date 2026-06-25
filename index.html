@@ -9,7 +9,7 @@
   <meta name="description" content="Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplamy ściany, poddasza i fundamenty. Cała Warszawa i okolice."/>
   <meta name="robots" content="index, follow"/>
   <!-- DO UZUPEŁNIENIA: jeśli kupisz domenę warszawską, podmień canonical + sitemap.xml + CNAME -->
-  <link rel="canonical" href="https://ociepleniapisz.pl/"/>
+  <link rel="canonical" href="https://ocieplenia.warszawa.pl/"/>
 
   <!-- ─── FAVICON ─── -->
   <link rel="icon" type="image/png" href="favicon.png"/>
@@ -20,11 +20,11 @@
   <meta property="og:locale" content="pl_PL"/>
   <meta property="og:title" content="Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MARBUD"/>
   <meta property="og:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
-  <meta property="og:url" content="https://ociepleniapisz.pl/"/>
-  <meta property="og:image" content="https://ociepleniapisz.pl/1.jpg"/>
+  <meta property="og:url" content="https://ocieplenia.warszawa.pl/"/>
+  <meta property="og:image" content="https://ocieplenia.warszawa.pl/1.jpg"/>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="1.jpg" fetchpriority="high"/>
+  <link rel="stylesheet" href="fonts.css"/>
 
   <!-- ─── JSON-LD: LocalBusiness ─── -->
   <!-- DO UZUPEŁNIENIA: po założeniu wizytówki Google dodaj "sameAs" (link do GBP)
@@ -35,7 +35,7 @@
     "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
     "name": "MARBUD Ocieplenia",
     "description": "Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplenie ścian, poddaszy i fundamentów, elewacje i tynki.",
-    "url": "https://ociepleniapisz.pl/",
+    "url": "https://ocieplenia.warszawa.pl/",
     "telephone": "+48535685720",
     "email": "budmar.info@gmail.com",
     "vatID": "PL8491375008",
@@ -45,7 +45,7 @@
       "propertyName": "REGON",
       "value": "525485703"
     },
-    "image": "https://ociepleniapisz.pl/1.jpg",
+    "image": "https://ocieplenia.warszawa.pl/1.jpg",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -499,6 +499,8 @@
       background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c1121f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center/contain no-repeat;
     }
     .area-note { margin-top:20px; font-size:.83rem; font-weight:400; color:var(--ink2); line-height:1.65; padding:16px 20px; background:var(--light-o); border-left:3px solid var(--accent); }
+    a.area-item { text-decoration:none; transition:color .2s; }
+    a.area-item:hover { color:var(--accent); }
     .area-prose { margin-top: 22px; font-size: .9rem; color: var(--ink2); line-height: 1.75; }
 
     /* ─── FAQ ─── */
@@ -781,9 +783,9 @@
 <section id="why">
   <div class="why-wrap">
     <div class="why-photos rv">
-      <div class="ph span2"><img src="2.jpg" alt="Ocieplenie domu jednorodzinnego w Warszawie" loading="lazy"/></div>
-      <div class="ph"><img src="3.jpg" alt="Elewacja po ociepleniu — termomodernizacja Warszawa" loading="lazy"/></div>
-      <div class="ph"><img src="4.jpg" alt="Prace elewacyjne przy ociepleniu domu" loading="lazy"/></div>
+      <div class="ph span2"><img src="2.jpg" width="800" height="600" alt="Ocieplenie domu jednorodzinnego w Warszawie" loading="lazy"/></div>
+      <div class="ph"><img src="3.jpg" width="800" height="531" alt="Elewacja po ociepleniu — termomodernizacja Warszawa" loading="lazy"/></div>
+      <div class="ph"><img src="4.jpg" width="800" height="531" alt="Prace elewacyjne przy ociepleniu domu" loading="lazy"/></div>
     </div>
     <div>
       <span class="sec-tag rv">Dlaczego warto</span>
@@ -945,42 +947,42 @@
        Po wykonaniu pierwszych zleceń w Warszawie podmień zdjęcia i opisy na realne. -->
   <div class="gal-grid rv">
     <div class="real-card">
-      <div class="real-photo"><img src="1.jpg" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></div>
+      <div class="real-photo"><img src="1.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Dom jednorodzinny <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="2.jpg" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></div>
+      <div class="real-photo"><img src="2.jpg" width="800" height="600" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Elewacja domu <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Tynk silikonowy</span><span class="real-tag">~__ m²</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="3.jpg" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></div>
+      <div class="real-photo"><img src="3.jpg" width="800" height="531" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Ocieplenie ścian <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Wełna mineralna</span><span class="real-tag">~__ m²</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="4.jpg" alt="Realizacja termomodernizacji budynku" loading="lazy"/></div>
+      <div class="real-photo"><img src="4.jpg" width="800" height="531" alt="Realizacja termomodernizacji budynku" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Termomodernizacja <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="5.jpg" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></div>
+      <div class="real-photo"><img src="5.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Dom z elewacją <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Tynk mineralny</span><span class="real-tag">~__ m²</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="6.jpg" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></div>
+      <div class="real-photo"><img src="6.jpg" width="800" height="600" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Budynek gospodarczy <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian</span><span class="real-tag">~__ m²</span></div>
@@ -997,16 +999,16 @@
       <h2 class="sec-title rv">Warszawa i okolice</h2>
       <div class="sec-bar rv"></div>
       <div class="area-cols rv">
-        <div class="area-item">Mokotów</div>
-        <div class="area-item">Wawer</div>
-        <div class="area-item">Wesoła</div>
-        <div class="area-item">Ursynów</div>
-        <div class="area-item">Wilanów</div>
-        <div class="area-item">Białołęka</div>
-        <div class="area-item">Włochy</div>
-        <div class="area-item">Ursus</div>
-        <div class="area-item">Bemowo</div>
-        <div class="area-item">Targówek</div>
+        <a href="ocieplenia-mokotow.html" class="area-item">Mokotów</a>
+        <a href="ocieplenia-wawer.html" class="area-item">Wawer</a>
+        <a href="ocieplenia-wesola.html" class="area-item">Wesoła</a>
+        <a href="ocieplenia-ursynow.html" class="area-item">Ursynów</a>
+        <a href="ocieplenia-wilanow.html" class="area-item">Wilanów</a>
+        <a href="ocieplenia-bialoleka.html" class="area-item">Białołęka</a>
+        <a href="ocieplenia-wlochy.html" class="area-item">Włochy</a>
+        <a href="ocieplenia-ursus.html" class="area-item">Ursus</a>
+        <a href="ocieplenia-bemowo.html" class="area-item">Bemowo</a>
+        <a href="ocieplenia-targowek.html" class="area-item">Targówek</a>
         <div class="area-item">Piaseczno</div>
         <div class="area-item">Józefów</div>
         <div class="area-item">Marki</div>

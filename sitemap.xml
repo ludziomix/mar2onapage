@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <url><loc>https://ocieplenia.warszawa.pl/</loc><lastmod>2026-06-25</lastmod><priority>1.0</priority></url>
 
-
-<url>
-  <loc>https://ocieplenia.warszawa.pl/</loc>
-  <lastmod>2026-06-23T00:00:00+00:00</lastmod>
-</url>
-
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-mokotow.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-wawer.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-wesola.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-ursynow.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-wilanow.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-bialoleka.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-wlochy.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-ursus.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-bemowo.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://ocieplenia.warszawa.pl/ocieplenia-targowek.html</loc><lastmod>2026-06-25</lastmod><priority>0.8</priority></url>
 
 </urlset>
