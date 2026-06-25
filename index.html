@@ -570,7 +570,8 @@
     #btt svg { width:16px; height:16px; stroke:#fff; stroke-width:2.5; fill:none; }
 
     /* ─── MOB CALL ─── */
-    .mob-call { display:none; position:fixed; bottom:0; left:0; right:0; z-index:198; background:var(--accent); }
+    .mob-call { display:none; position:fixed; bottom:0; left:0; right:0; z-index:198; background:var(--accent); transform:translateY(100%); transition:transform .32s var(--ease); }
+    .mob-call.show { transform:translateY(0); }
     .mob-call a { display:flex; align-items:center; justify-content:center; gap:10px; width:100%; padding:15px; color:#fff; text-decoration:none; font-family:var(--ff-h); font-size:1.3rem; font-weight:900; letter-spacing:.08em; }
     .mob-call .ico { width:20px; height:20px; }
 
@@ -599,6 +600,13 @@
     .cookie-accept:hover { background:var(--accent2); border-color:var(--accent2); transform:translateY(-2px); }
     .cookie-reject { background:transparent; border-color:rgba(255,255,255,.4); color:#fff; }
     .cookie-reject:hover { border-color:#fff; }
+
+    @media (max-width: 768px) {
+      .cookie-bar { padding:12px 16px; gap:10px; }
+      .cookie-text { font-size:.72rem; line-height:1.45; }
+      .cookie-actions { width:100%; gap:8px; flex-wrap:nowrap; }
+      .cookie-actions .cookie-btn { flex:1; padding:10px 6px; font-size:.68rem; letter-spacing:.02em; text-align:center; }
+    }
 
     /* ─── REVEAL ─── */
     .rv { opacity:0; transform:translateY(26px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
@@ -659,7 +667,7 @@
       .form-row { grid-template-columns: 1fr; }
 
       footer { flex-direction: column; text-align: center; }
-      .mob-call { display: flex; }
+      .mob-call { display: block; }
       body { padding-bottom: 56px; }
     }
 
@@ -1184,6 +1192,17 @@
     e.forEach(x => { if (x.isIntersecting) { x.target.classList.add('in'); io.unobserve(x.target); } });
   }, { threshold: 0.1 });
   document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+  // ── Pasek „Zadzwoń" (mobile): pokazuje się po przewinięciu obok numeru w hero ──
+  (function () {
+    const mobCall = document.querySelector('.mob-call');
+    const heroStrip = document.querySelector('.hero-strip');
+    if (!mobCall || !heroStrip) return;
+    const mio = new IntersectionObserver(entries => {
+      entries.forEach(x => mobCall.classList.toggle('show', !x.isIntersecting));
+    }, { threshold: 0 });
+    mio.observe(heroStrip);
+  })();
 
   // ── COOKIES (RODO) + warunkowe ładowanie Mapy Google ──
   (function () {
