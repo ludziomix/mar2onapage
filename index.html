@@ -952,42 +952,42 @@
       <div class="real-photo"><img src="1.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Dom jednorodzinny <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Styropian BSO</span></div>
       </div>
     </div>
     <div class="real-card">
       <div class="real-photo"><img src="2.jpg" width="800" height="600" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Elewacja domu <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Tynk silikonowy</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Tynk silikonowy</span></div>
       </div>
     </div>
     <div class="real-card">
       <div class="real-photo"><img src="3.jpg" width="800" height="531" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Ocieplenie ścian <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Wełna mineralna</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Wełna mineralna</span></div>
       </div>
     </div>
     <div class="real-card">
       <div class="real-photo"><img src="4.jpg" width="800" height="531" alt="Realizacja termomodernizacji budynku" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Termomodernizacja <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Styropian BSO</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Styropian BSO</span></div>
       </div>
     </div>
     <div class="real-card">
       <div class="real-photo"><img src="5.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Dom z elewacją <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Tynk mineralny</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Tynk mineralny</span></div>
       </div>
     </div>
     <div class="real-card">
       <div class="real-photo"><img src="6.jpg" width="800" height="600" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></div>
       <div class="real-meta">
         <div class="real-loc">Budynek gospodarczy <!-- DZIELNICA --></div>
-        <div class="real-tags"><span class="real-tag">Styropian</span><span class="real-tag">~__ m²</span></div>
+        <div class="real-tags"><span class="real-tag">Styropian</span></div>
       </div>
     </div>
   </div>
@@ -1073,12 +1073,17 @@
       <p class="rv">Zostaw numer lub zadzwoń – przyjedziemy, zmierzymy i wycenimy bez żadnych opłat. Działamy na Mokotowie i w całej Warszawie.</p>
     </div>
     <div class="contact-grid">
-      <!-- FORMULARZ — Netlify Forms (działa po wdrożeniu na Netlify, bez backendu).
-           DO UZUPEŁNIENIA: jeśli hosting to NIE Netlify, podmień obsługę formularza
-           (np. Formspree) — same pola zostają. -->
-      <form class="form-card rv" name="wycena" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="wycena"/>
-        <p class="hp"><label>Nie wypełniaj: <input name="bot-field"/></label></p>
+      <!-- FORMULARZ — FormSubmit.co (działa na GitHub Pages, bez backendu i bez konta).
+           WAŻNE: pierwsze wysłane zgłoszenie trzeba JEDNORAZOWO potwierdzić linkiem
+           z e-maila aktywacyjnego od FormSubmit. Potem działa automatycznie.
+           Opcjonalnie: w panelu FormSubmit możesz wygenerować zaszyfrowany endpoint
+           (https://formsubmit.co/el/xxxx) i podmienić nim adres w action, by nie ujawniać e-maila. -->
+      <form class="form-card rv" action="https://formsubmit.co/budmar.info@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nowe zapytanie o wycenę — MARBUD"/>
+        <input type="hidden" name="_template" value="table"/>
+        <input type="hidden" name="_captcha" value="false"/>
+        <input type="hidden" name="_next" value="https://ocieplenia.warszawa.pl/"/>
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
         <h3>Zamów bezpłatną wycenę</h3>
         <p class="form-sub">Odpowiadamy w ciągu 24 godzin.</p>
         <div class="form-row">
