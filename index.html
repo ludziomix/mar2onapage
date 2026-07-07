@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- ─── SEO PODSTAWOWE ─── -->
-  <title>Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MARBUD</title>
+  <title>Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MarBud</title>
   <meta name="description" content="Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplamy ściany, poddasza i fundamenty. Cała Warszawa i okolice."/>
   <meta name="robots" content="index, follow"/>
   <!-- DO UZUPEŁNIENIA: jeśli kupisz domenę warszawską, podmień canonical + sitemap.xml + CNAME -->
@@ -18,22 +18,42 @@
   <!-- ─── OPEN GRAPH / SOCIAL ─── -->
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="pl_PL"/>
-  <meta property="og:title" content="Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MARBUD"/>
+  <meta property="og:title" content="Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MarBud"/>
   <meta property="og:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
   <meta property="og:url" content="https://ocieplenia.warszawa.pl/"/>
   <meta property="og:image" content="https://ocieplenia.warszawa.pl/1.jpg"/>
+  <meta property="og:image:width" content="1280"/>
+  <meta property="og:image:height" content="960"/>
+  <meta property="og:site_name" content="MarBud Ocieplenia"/>
 
-  <link rel="preload" as="image" href="1.jpg" fetchpriority="high"/>
+  <!-- ─── TWITTER / X CARD ─── -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Ocieplenia domów Warszawa | Termomodernizacja – MarBud"/>
+  <meta name="twitter:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
+  <meta name="twitter:image" content="https://ocieplenia.warszawa.pl/1.jpg"/>
+
+  <!-- ─── GEO / LOCAL ─── -->
+  <meta name="geo.region" content="PL-MZ"/>
+  <meta name="geo.placename" content="Warszawa"/>
+  <meta name="geo.position" content="52.1828315;21.016599"/>
+  <meta name="ICBM" content="52.1828315, 21.016599"/>
+  <meta name="theme-color" content="#1a1f2e"/>
+
+  <link rel="preload" as="image" href="1.webp" type="image/webp" fetchpriority="high"/>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/nunito-400.woff2" crossorigin/>
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin/>
   <link rel="stylesheet" href="fonts.css"/>
 
   <!-- ─── JSON-LD: LocalBusiness ─── -->
-  <!-- DO UZUPEŁNIENIA: po założeniu wizytówki Google dodaj "sameAs" (link do GBP)
-       oraz "aggregateRating", gdy pojawią się opinie. -->
+  <!-- DO UZUPEŁNIENIA — gdy zbierzesz PRAWDZIWE opinie w Google, wklej poniższy blok
+       do obiektu LocalBusiness (np. tuż pod "priceRange"). NIE wpisuj zmyślonych ocen —
+       Google karze za fałszywe recenzje. Podmień tylko liczby na realne:
+       "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "12" }, -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": ["GeneralContractor", "HomeAndConstructionBusiness"],
-    "name": "MARBUD Ocieplenia",
+    "name": "MarBud Ocieplenia",
     "description": "Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplenie ścian, poddaszy i fundamentów, elewacje i tynki.",
     "url": "https://ocieplenia.warszawa.pl/",
     "telephone": "+48535685720",
@@ -55,7 +75,16 @@
       "addressRegion": "Mazowieckie",
       "addressCountry": "PL"
     },
-    "hasMap": "https://www.google.com/maps?q=Domaniewska+13%2F15,+02-672+Warszawa",
+    "hasMap": "https://www.google.com/maps?cid=11867896215523366910",
+    "sameAs": [
+      "https://www.google.com/maps?cid=11867896215523366910",
+      "https://www.oferteo.pl/zbigniew-kalinowski/firma/7619819"
+    ],
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.1828315,
+      "longitude": 21.0165990
+    },
     "areaServed": [
       { "@type": "City", "name": "Warszawa" },
       { "@type": "AdministrativeArea", "name": "Mokotów" },
@@ -92,7 +121,7 @@
     "serviceType": "Ocieplenia domów i termomodernizacja",
     "provider": {
       "@type": "GeneralContractor",
-      "name": "MARBUD Ocieplenia",
+      "name": "MarBud Ocieplenia",
       "telephone": "+48535685720"
     },
     "areaServed": { "@type": "City", "name": "Warszawa" },
@@ -265,7 +294,9 @@
     }
     .hero-img {
       position: absolute; inset: 0;
-      background: url('1.jpg') center/cover no-repeat;
+      background: url('1.jpg') center/cover no-repeat; /* fallback dla starych przeglądarek */
+      background-image: image-set(url('1.webp') type('image/webp'), url('1.jpg') type('image/jpeg'));
+      background-position: center; background-size: cover; background-repeat: no-repeat;
     }
     .hero-img::after {
       content: '';
@@ -710,7 +741,7 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" class="logo" aria-label="MARBUD Ocieplenia — strona główna"><img src="MARBUD-logo-bialy.png" alt="MARBUD Ocieplenia Warszawa" class="logo-img"/></a>
+  <a href="#hero" class="logo" aria-label="MarBud Ocieplenia — strona główna"><img src="MARBUD-logo-bialy.png" alt="MarBud Ocieplenia Warszawa" class="logo-img"/></a>
   <div class="nav-menu" id="navMenu">
     <a href="#services" class="nav-link">Usługi</a>
     <a href="#gallery" class="nav-link">Realizacje</a>
@@ -949,42 +980,42 @@
        Po wykonaniu pierwszych zleceń w Warszawie podmień zdjęcia i opisy na realne. -->
   <div class="gal-grid rv">
     <div class="real-card">
-      <div class="real-photo"><img src="1.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="1.webp" type="image/webp"/><img src="1.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu jednorodzinnego styropianem" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Dom jednorodzinny <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian BSO</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="2.jpg" width="800" height="600" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="2.webp" type="image/webp"/><img src="2.jpg" width="800" height="600" alt="Realizacja ocieplenia elewacji domu" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Elewacja domu <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Tynk silikonowy</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="3.jpg" width="800" height="531" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="3.webp" type="image/webp"/><img src="3.jpg" width="800" height="531" alt="Realizacja ocieplenia ścian zewnętrznych" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Ocieplenie ścian <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Wełna mineralna</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="4.jpg" width="800" height="531" alt="Realizacja termomodernizacji budynku" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="4.webp" type="image/webp"/><img src="4.jpg" width="800" height="531" alt="Realizacja termomodernizacji budynku" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Termomodernizacja <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian BSO</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="5.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="5.webp" type="image/webp"/><img src="5.jpg" width="1280" height="960" alt="Realizacja ocieplenia domu z elewacją" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Dom z elewacją <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Tynk mineralny</span></div>
       </div>
     </div>
     <div class="real-card">
-      <div class="real-photo"><img src="6.jpg" width="800" height="600" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></div>
+      <div class="real-photo"><picture><source srcset="6.webp" type="image/webp"/><img src="6.jpg" width="800" height="600" alt="Realizacja ocieplenia budynku gospodarczego" loading="lazy"/></picture></div>
       <div class="real-meta">
         <div class="real-loc">Budynek gospodarczy <!-- DZIELNICA --></div>
         <div class="real-tags"><span class="real-tag">Styropian</span></div>
@@ -1019,9 +1050,11 @@
       <p class="area-prose rv">Siedzibę mamy na <strong>Mokotowie</strong>, ale ocieplenia domów wykonujemy na terenie <strong>całej Warszawy</strong> oraz w miejscowościach podwarszawskich. Szczególnie często pracujemy w dzielnicach z zabudową jednorodzinną — na <strong>Wawrze</strong>, <strong>Wesołej</strong>, <strong>Ursynowie</strong>, <strong>Wilanowie</strong>, <strong>Białołęce</strong>, <strong>Włochach</strong>, <strong>Ursusie</strong>, <strong>Bemowie</strong> i <strong>Targówku</strong>, a także w <strong>Piasecznie</strong>, <strong>Józefowie</strong>, <strong>Markach</strong> i <strong>Ząbkach</strong>.</p>
       <div class="area-note rv d1">Nie widzisz swojej dzielnicy lub miejscowości? Zadzwoń – obsługujemy całą aglomerację warszawską, na pewno do Ciebie dojedziemy.</div>
     </div>
-    <!-- Mapa ładuje się dopiero po zgodzie na cookies (RODO). data-src podmień na embed
-         z Twojej wizytówki Google, gdy będzie gotowa (Udostępnij → Umieść mapę). -->
-    <div class="area-map rv d2" id="mapHolder" data-src="https://www.google.com/maps?q=Domaniewska%2013%2F15,%2002-672%20Warszawa&output=embed">
+    <!-- Mapa ładuje się dopiero po zgodzie na cookies (RODO).
+         Teraz szuka po NAZWIE firmy, więc pokazuje markową pinezkę wizytówki, a nie sam adres.
+         NAJLEPIEJ: w Mapach Google otwórz wizytówkę → Udostępnij → Umieść mapę → skopiuj
+         z iframe sam adres z parametrem pb=... i wklej go tutaj w data-src (zastąpi poniższy). -->
+    <div class="area-map rv d2" id="mapHolder" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.33831141456!2d21.01406697686922!3d52.18272296114551!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47193395f5f6353d%3A0xa4b33cbaad7917fe!2sMarBud%20Ocieplenia!5e0!3m2!1spl!2spl!4v1783426206029!5m2!1spl!2spl">
       <div class="map-ph" id="mapPlaceholder">
         <p>Mapa Google ładuje pliki cookie firmy Google. Pokaż mapę, aby ją załadować.</p>
         <button type="button" class="btn btn-orange" id="mapLoadBtn">Pokaż mapę</button>
@@ -1079,7 +1112,7 @@
            Opcjonalnie: w panelu FormSubmit możesz wygenerować zaszyfrowany endpoint
            (https://formsubmit.co/el/xxxx) i podmienić nim adres w action, by nie ujawniać e-maila. -->
       <form class="form-card rv" action="https://formsubmit.co/budmar.info@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nowe zapytanie o wycenę — MARBUD"/>
+        <input type="hidden" name="_subject" value="Nowe zapytanie o wycenę — MarBud"/>
         <input type="hidden" name="_template" value="table"/>
         <input type="hidden" name="_captcha" value="false"/>
         <input type="hidden" name="_next" value="https://ocieplenia.warszawa.pl/"/>
@@ -1134,7 +1167,7 @@
           <div class="c-card-val" style="font-size:1.15rem;">budmar.info@gmail.com</div>
           <div class="c-card-sub">Odpowiadamy w 24h</div>
         </a>
-        <a href="https://www.google.com/maps?q=Domaniewska+13%2F15,+02-672+Warszawa" target="_blank" rel="noopener" class="c-card rv d2">
+        <a href="https://www.google.com/maps?cid=11867896215523366910" target="_blank" rel="noopener" class="c-card rv d2">
           <div class="c-card-lbl">Adres</div>
           <div class="c-card-val" style="font-size:1.15rem;">ul. Domaniewska 13/15</div>
           <div class="c-card-sub">02-672 Warszawa (Mokotów) · cała Warszawa i okolice</div>
@@ -1146,8 +1179,8 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="#hero" class="f-logo" aria-label="MARBUD Ocieplenia"><img src="MARBUD-logo-bialy.png" alt="MARBUD Ocieplenia" class="f-logo-img"/></a>
-  <p>© 2026 MARBUD Ocieplenia · ul. Domaniewska 13/15, 02-672 Warszawa · NIP 8491375008 · REGON 525485703 · tel. 535 685 720</p>
+  <a href="#hero" class="f-logo" aria-label="MarBud Ocieplenia"><img src="MARBUD-logo-bialy.png" alt="MarBud Ocieplenia" class="f-logo-img"/></a>
+  <p>© 2026 MarBud Ocieplenia · ul. Domaniewska 13/15, 02-672 Warszawa · NIP 8491375008 · REGON 525485703 · tel. 535 685 720</p>
   <div class="f-links">
     <a href="#services">Usługi</a>
     <a href="#gallery">Realizacje</a>
@@ -1217,7 +1250,7 @@
       if (ph) ph.remove();
       const ifr = document.createElement('iframe');
       ifr.src = holder.getAttribute('data-src');
-      ifr.title = 'Mapa — MARBUD Ocieplenia, Domaniewska 13/15, Warszawa';
+      ifr.title = 'Mapa — MarBud Ocieplenia, Domaniewska 13/15, Warszawa';
       ifr.loading = 'lazy';
       ifr.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
       ifr.allowFullscreen = true;

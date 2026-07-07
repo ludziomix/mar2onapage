@@ -1,4 +1,4 @@
-/* ─── Wspólny styl podstron MARBUD (dzielnice, 404) ─── */
+/* ─── Wspólny styl podstron MarBud (dzielnice, 404) ─── */
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 :root {
   --bg:#fff; --bg2:#f7f6f2; --bg3:#eef0f3; --ink:#1a1f2e; --ink2:#4a5060;
