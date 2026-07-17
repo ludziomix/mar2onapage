@@ -558,7 +558,7 @@
     .contact-head h2 { font-family:var(--ff-h); font-size:clamp(2.4rem,6vw,4.2rem); font-weight:900; color:#fff; line-height:.95; letter-spacing:.02em; }
     .contact-head h2 span { color:rgba(255,255,255,.5); font-weight:400; }
     .contact-head p { margin-top:16px; font-size:1rem; color:rgba(255,255,255,.85); font-weight:400; line-height:1.6; }
-    .contact-grid { display:grid; grid-template-columns: 1.1fr .9fr; gap: 28px; align-items:start; }
+    .contact-grid { max-width:900px; margin:0 auto; }
 
     .form-card { background:#fff; padding: 32px 30px; }
     .form-card h3 { font-family:var(--ff-h); font-size:1.6rem; font-weight:800; color:var(--ink); letter-spacing:.03em; margin-bottom:6px; }
@@ -577,7 +577,7 @@
     .form-note { margin-top:12px; font-size:.72rem; color:var(--ink2); text-align:center; }
     .hp { position:absolute; left:-9999px; }
 
-    .contact-side { display:flex; flex-direction:column; gap:14px; }
+    .contact-side { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
     .c-card {
       background:rgba(255,255,255,.15); border:1.5px solid rgba(255,255,255,.28);
       padding:20px 26px; text-decoration:none; display:block;
@@ -698,7 +698,7 @@
       .area-map { height: 240px; }
       .area-cols { grid-template-columns: 1fr; }
 
-      .contact-grid { grid-template-columns: 1fr; }
+      .contact-side { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
 
       footer { flex-direction: column; text-align: center; }
@@ -1104,59 +1104,9 @@
   <div class="contact-inner">
     <div class="contact-head">
       <h2 class="rv">Bezpłatna wycena<br><span>w 24 godziny</span></h2>
-      <p class="rv">Zostaw numer lub zadzwoń – przyjedziemy, zmierzymy i wycenimy bez żadnych opłat. Działamy na Mokotowie i w całej Warszawie.</p>
+      <p class="rv">Zadzwoń lub napisz – przyjedziemy, zmierzymy i wycenimy bez żadnych opłat. Działamy na Mokotowie i w całej Warszawie.</p>
     </div>
     <div class="contact-grid">
-      <!-- FORMULARZ — FormSubmit.co (działa na GitHub Pages, bez backendu i bez konta).
-           WAŻNE: pierwsze wysłane zgłoszenie trzeba JEDNORAZOWO potwierdzić linkiem
-           z e-maila aktywacyjnego od FormSubmit. Potem działa automatycznie.
-           Opcjonalnie: w panelu FormSubmit możesz wygenerować zaszyfrowany endpoint
-           (https://formsubmit.co/el/xxxx) i podmienić nim adres w action, by nie ujawniać e-maila. -->
-      <form class="form-card rv" action="https://formsubmit.co/budmar.info@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nowe zapytanie o wycenę — MarBud"/>
-        <input type="hidden" name="_template" value="table"/>
-        <input type="hidden" name="_captcha" value="false"/>
-        <input type="hidden" name="_next" value="https://ocieplenia.warszawa.pl/"/>
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
-        <h3>Zamów bezpłatną wycenę</h3>
-        <p class="form-sub">Odpowiadamy w ciągu 24 godzin.</p>
-        <div class="form-row">
-          <div class="field">
-            <label for="f-name">Imię i nazwisko</label>
-            <input id="f-name" type="text" name="imie" required/>
-          </div>
-          <div class="field">
-            <label for="f-phone">Telefon</label>
-            <input id="f-phone" type="tel" name="telefon" required/>
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="field">
-            <label for="f-area">Dzielnica / miejscowość</label>
-            <input id="f-area" type="text" name="lokalizacja" placeholder="np. Wawer"/>
-          </div>
-          <div class="field">
-            <label for="f-type">Zakres prac</label>
-            <select id="f-type" name="zakres">
-              <option value="">— wybierz —</option>
-              <option>Ocieplenie ścian (styropian)</option>
-              <option>Ocieplenie wełną mineralną</option>
-              <option>Pianka PUR</option>
-              <option>Ocieplenie poddasza</option>
-              <option>Ocieplenie fundamentów</option>
-              <option>Elewacja i tynk</option>
-              <option>Inne</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="f-msg">Wiadomość (metraż, rodzaj budynku)</label>
-          <textarea id="f-msg" name="wiadomosc" placeholder="np. dom jednorodzinny ok. 120 m², ocieplenie styropianem + tynk"></textarea>
-        </div>
-        <button type="submit" class="btn btn-orange">Wyślij zapytanie ↗</button>
-        <p class="form-note">Wysyłając formularz, zgadzasz się na kontakt w sprawie wyceny. Twoje dane przetwarzamy zgodnie z <a href="polityka-prywatnosci.html">polityką prywatności</a>.</p>
-      </form>
-
       <div class="contact-side">
         <a href="tel:+48535685720" class="c-card rv">
           <div class="c-card-lbl">Telefon</div>
