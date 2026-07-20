@@ -3,6 +3,8 @@
 :root {
   --bg:#fff; --bg2:#f7f6f2; --bg3:#eef0f3; --ink:#1a1f2e; --ink2:#4a5060;
   --accent:#c1121f; --accent2:#9a0e18; --light-o:#fcebec;
+  /* czerwień do linków NA CIEMNYM tle — #c1121f daje tam tylko 2.64:1 (WCAG wymaga 4.5:1) */
+  --accent-on-dark:#f06470;
   --border:#e4e6ea; --border-s:#d3d7df;
   --ff-h:'Barlow Condensed',sans-serif; --ff-b:'Nunito',sans-serif;
   --ease:cubic-bezier(.25,.8,.25,1);
@@ -25,7 +27,7 @@ img { max-width:100%; display:block; }
 .sub-hero { background:var(--ink); color:#fff; padding:64px 5% 56px; }
 .sub-hero .wrap { max-width:880px; margin:0 auto; }
 .crumbs { font-size:.74rem; color:rgba(255,255,255,.55); margin-bottom:16px; text-transform:uppercase; letter-spacing:.1em; }
-.crumbs a { color:var(--accent); text-decoration:none; }
+.crumbs a { color:var(--accent-on-dark); text-decoration:none; }
 .crumbs a:hover { text-decoration:underline; }
 .sub-hero h1 { font-family:var(--ff-h); font-size:clamp(2.4rem,6vw,4rem); font-weight:900; line-height:.98; letter-spacing:.02em; }
 .sub-hero h1 .ora { color:var(--accent); }
@@ -67,9 +69,9 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 
 /* FOOTER */
 .sub-foot { background:var(--ink); padding:26px 5%; text-align:center; }
-.sub-foot p { font-size:.75rem; color:rgba(255,255,255,.45); line-height:1.8; }
-.sub-foot a { color:rgba(255,255,255,.6); text-decoration:none; }
-.sub-foot a:hover { color:var(--accent); }
+.sub-foot p { font-size:.75rem; color:rgba(255,255,255,.65); line-height:1.8; }
+.sub-foot a { color:rgba(255,255,255,.8); text-decoration:none; }
+.sub-foot a:hover { color:var(--accent-on-dark); }
 
 /* ─── PORADNIK / ARTYKUŁY ─── */
 .art-meta { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; margin-top:16px; font-size:.8rem; color:rgba(255,255,255,.6); }
@@ -134,7 +136,7 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 .blog-card:hover { border-color:var(--accent); transform:translateY(-4px); }
 .blog-card .thumb { aspect-ratio:16/9; background:var(--bg3) center/cover no-repeat; }
 .blog-card .body { padding:16px 18px 20px; }
-.blog-card .cat { font-size:.7rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+.blog-card .cat { font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
 .blog-card h2 { font-family:var(--ff-h); font-size:1.3rem; font-weight:800; color:var(--ink); line-height:1.1; letter-spacing:.02em; margin:6px 0 8px; }
 .blog-card p { font-size:.85rem; color:var(--ink2); margin:0; line-height:1.5; }
 

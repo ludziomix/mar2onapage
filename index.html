@@ -207,6 +207,8 @@
       --ink:      #1a1f2e;
       --ink2:     #4a5060;
       --accent:   #c1121f;
+      /* czerwień do linków NA CIEMNYM tle — #c1121f daje tam tylko 2.64:1 (WCAG wymaga 4.5:1) */
+      --accent-on-dark: #f06470;
       --accent2:  #9a0e18;
       --light-o:  #fcebec;
       --border:   #e4e6ea;
@@ -593,10 +595,10 @@
     footer { background: var(--ink); padding:28px 5%; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; }
     .f-logo { display:inline-flex; align-items:center; text-decoration:none; }
     .f-logo-img { height:42px; width:auto; display:block; }
-    footer p { font-size:.75rem; color:rgba(255,255,255,.2); }
+    footer p { font-size:.75rem; color:rgba(255,255,255,.65); }
     .f-links { display:flex; gap:20px; flex-wrap:wrap; }
-    .f-links a { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.25); text-decoration:none; transition:color .2s; }
-    .f-links a:hover { color:var(--accent); }
+    .f-links a { font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.75); text-decoration:none; transition:color .2s; }
+    .f-links a:hover { color:var(--accent-on-dark); }
 
     /* ─── BTT ─── */
     #btt { position:fixed; bottom:22px; right:22px; z-index:99; width:42px; height:42px; background:var(--accent); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity .3s, transform .3s; }
@@ -624,7 +626,7 @@
     }
     .cookie-bar.hidden { display:none; }
     .cookie-text { font-size:.82rem; color:rgba(255,255,255,.82); max-width:640px; line-height:1.55; }
-    .cookie-text a { color:var(--accent); text-decoration:underline; }
+    .cookie-text a { color:var(--accent-on-dark); text-decoration:underline; }
     .cookie-actions { display:flex; gap:10px; flex-wrap:wrap; }
     .cookie-btn {
       padding:11px 22px; font-family:var(--ff-b); font-size:.76rem; font-weight:700;
