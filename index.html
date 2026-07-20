@@ -42,7 +42,15 @@
   <link rel="preload" as="image" href="1.webp" type="image/webp" fetchpriority="high"/>
   <link rel="preload" as="font" type="font/woff2" href="fonts/nunito-400.woff2" crossorigin/>
   <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-800.woff2" crossorigin/>
-  <link rel="stylesheet" href="fonts.css"/>
+  <!-- @font-face inline zamiast <link fonts.css> — usuwa żądanie blokujące render (PageSpeed ~920 ms) -->
+  <style>
+    @font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:700; font-display:swap; src:url('fonts/barlow-condensed-700.woff2') format('woff2'); }
+    @font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:800; font-display:swap; src:url('fonts/barlow-condensed-800.woff2') format('woff2'); }
+    @font-face { font-family:'Barlow Condensed'; font-style:normal; font-weight:900; font-display:swap; src:url('fonts/barlow-condensed-900.woff2') format('woff2'); }
+    @font-face { font-family:'Nunito'; font-style:normal; font-weight:400; font-display:swap; src:url('fonts/nunito-400.woff2') format('woff2'); }
+    @font-face { font-family:'Nunito'; font-style:normal; font-weight:600; font-display:swap; src:url('fonts/nunito-600.woff2') format('woff2'); }
+    @font-face { font-family:'Nunito'; font-style:normal; font-weight:700; font-display:swap; src:url('fonts/nunito-700.woff2') format('woff2'); }
+  </style>
 
   <!-- ─── JSON-LD: LocalBusiness ─── -->
   <!-- DO UZUPEŁNIENIA — gdy zbierzesz PRAWDZIWE opinie w Google, wklej poniższy blok
@@ -743,7 +751,7 @@
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#hero" class="logo" aria-label="MarBud Ocieplenia — strona główna"><img src="MARBUD-logo-bialy.png" alt="MarBud Ocieplenia Warszawa" class="logo-img"/></a>
+  <a href="#hero" class="logo" aria-label="MarBud Ocieplenia — strona główna"><img src="MARBUD-logo-bialy.png" width="300" height="224" alt="MarBud Ocieplenia Warszawa" class="logo-img"/></a>
   <div class="nav-menu" id="navMenu">
     <a href="#services" class="nav-link">Usługi</a>
     <a href="#gallery" class="nav-link">Realizacje</a>
@@ -819,9 +827,9 @@
 <section id="why">
   <div class="why-wrap">
     <div class="why-photos rv">
-      <div class="ph span2"><img src="2.jpg" width="800" height="600" alt="Ocieplenie domu jednorodzinnego w Warszawie" loading="lazy"/></div>
-      <div class="ph"><img src="3.jpg" width="800" height="531" alt="Elewacja po ociepleniu — termomodernizacja Warszawa" loading="lazy"/></div>
-      <div class="ph"><img src="4.jpg" width="800" height="531" alt="Prace elewacyjne przy ociepleniu domu" loading="lazy"/></div>
+      <div class="ph span2"><picture><source srcset="2.webp" type="image/webp"/><img src="2.jpg" width="800" height="600" alt="Ocieplenie domu jednorodzinnego w Warszawie" loading="lazy"/></picture></div>
+      <div class="ph"><picture><source srcset="3.webp" type="image/webp"/><img src="3.jpg" width="800" height="531" alt="Elewacja po ociepleniu — termomodernizacja Warszawa" loading="lazy"/></picture></div>
+      <div class="ph"><picture><source srcset="4.webp" type="image/webp"/><img src="4.jpg" width="800" height="531" alt="Prace elewacyjne przy ociepleniu domu" loading="lazy"/></picture></div>
     </div>
     <div>
       <span class="sec-tag rv">Dlaczego warto</span>
@@ -1132,7 +1140,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <a href="#hero" class="f-logo" aria-label="MarBud Ocieplenia"><img src="MARBUD-logo-bialy.png" alt="MarBud Ocieplenia" class="f-logo-img"/></a>
+  <a href="#hero" class="f-logo" aria-label="MarBud Ocieplenia"><img src="MARBUD-logo-bialy.png" width="300" height="224" alt="MarBud Ocieplenia" class="f-logo-img"/></a>
   <p>© 2026 MarBud Ocieplenia · ul. Domaniewska 13/15, 02-672 Warszawa · NIP 8491375008 · REGON 525485703 · tel. 535 685 720</p>
   <div class="f-links">
     <a href="#services">Usługi</a>
