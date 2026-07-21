@@ -2,9 +2,10 @@
 *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
 :root {
   --bg:#fff; --bg2:#f7f6f2; --bg3:#eef0f3; --ink:#1a1f2e; --ink2:#4a5060;
-  --accent:#c1121f; --accent2:#9a0e18; --light-o:#fcebec;
-  /* czerwień do linków NA CIEMNYM tle — #c1121f daje tam tylko 2.64:1 (WCAG wymaga 4.5:1) */
-  --accent-on-dark:#f06470;
+  /* Paleta z logo: #ff9e1b (tło) + #e4610a (drzwi). Jasny pomarańcz nie nadaje się
+     na tekst na białym (2.07:1) — do tego --accent-ink. Na granacie daje 7.9:1. */
+  --accent:#ff9e1b; --accent2:#e4610a; --light-o:#fff4e3;
+  --accent-ink:#b34e05; --accent-on-dark:#ff9e1b;
   --border:#e4e6ea; --border-s:#d3d7df;
   --ff-h:'Barlow Condensed',sans-serif; --ff-b:'Nunito',sans-serif;
   --ease:cubic-bezier(.25,.8,.25,1);
@@ -19,7 +20,7 @@ img { max-width:100%; display:block; }
 .sub-nav .nav-right { display:flex; align-items:center; gap:14px; }
 .sub-nav .nav-phone { font-family:var(--ff-h); font-size:1.3rem; font-weight:800; color:#fff; text-decoration:none; letter-spacing:.05em; }
 .sub-nav .nav-phone:hover { color:var(--accent); }
-.sub-nav .nav-btn { background:var(--accent); color:#fff; padding:9px 20px; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; transition:background .25s; }
+.sub-nav .nav-btn { background:var(--accent); color:var(--ink); padding:9px 20px; font-size:.8rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; transition:background .25s; }
 .sub-nav .nav-btn:hover { background:var(--accent2); }
 @media (max-width:600px) { .sub-nav .nav-phone { display:none; } }
 
@@ -35,7 +36,7 @@ img { max-width:100%; display:block; }
 .sub-hero .cta { margin-top:28px; display:flex; flex-wrap:wrap; gap:14px; }
 
 .btn { display:inline-flex; align-items:center; gap:9px; padding:14px 28px; font-family:var(--ff-b); font-size:.86rem; font-weight:700; letter-spacing:.06em; text-transform:uppercase; text-decoration:none; border:2px solid transparent; cursor:pointer; transition:all .3s var(--ease); }
-.btn-orange { background:var(--accent); color:#fff; border-color:var(--accent); }
+.btn-orange { background:var(--accent); color:var(--ink); border-color:var(--accent); }
 .btn-orange:hover { background:var(--accent2); border-color:var(--accent2); transform:translateY(-2px); }
 .btn-outline { background:transparent; color:#fff; border-color:#fff; }
 .btn-outline:hover { background:#fff; color:var(--ink); }
@@ -58,13 +59,13 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 /* AREA LINKS */
 .area-links { display:flex; flex-wrap:wrap; gap:8px; margin-top:16px; }
 .area-links a { font-size:.82rem; font-weight:700; color:var(--ink); text-decoration:none; background:var(--bg2); border:1.5px solid var(--border-s); padding:7px 14px; transition:border-color .2s, color .2s; }
-.area-links a:hover { border-color:var(--accent); color:var(--accent); }
+.area-links a:hover { border-color:var(--accent); color:var(--accent-ink); }
 
 /* CTA BAND */
-.sub-cta { background:var(--accent); color:#fff; text-align:center; padding:56px 5%; }
-.sub-cta h2 { font-family:var(--ff-h); font-size:clamp(2rem,5vw,3rem); font-weight:900; color:#fff; line-height:1; letter-spacing:.02em; }
-.sub-cta p { margin-top:12px; color:rgba(255,255,255,.85); }
-.sub-cta .phone { display:inline-block; margin-top:24px; font-family:var(--ff-h); font-size:2.2rem; font-weight:900; color:#fff; text-decoration:none; letter-spacing:.06em; }
+.sub-cta { background:var(--accent); color:var(--ink); text-align:center; padding:56px 5%; }
+.sub-cta h2 { font-family:var(--ff-h); font-size:clamp(2rem,5vw,3rem); font-weight:900; color:var(--ink); line-height:1; letter-spacing:.02em; }
+.sub-cta p { margin-top:12px; color:rgba(26,31,46,.8); }
+.sub-cta .phone { display:inline-block; margin-top:24px; font-family:var(--ff-h); font-size:2.2rem; font-weight:900; color:var(--ink); text-decoration:none; letter-spacing:.06em; }
 .sub-cta .phone:hover { text-decoration:underline; }
 
 /* FOOTER */
@@ -75,7 +76,7 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 
 /* ─── PORADNIK / ARTYKUŁY ─── */
 .art-meta { display:flex; flex-wrap:wrap; gap:8px 16px; align-items:center; margin-top:16px; font-size:.8rem; color:rgba(255,255,255,.6); }
-.art-meta .tag { background:var(--accent); color:#fff; padding:3px 10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; font-size:.7rem; }
+.art-meta .tag { background:var(--accent); color:var(--ink); padding:3px 10px; font-weight:700; letter-spacing:.05em; text-transform:uppercase; font-size:.7rem; }
 
 /* featured image */
 .art-figure { margin:0 0 34px; }
@@ -92,18 +93,18 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 .art-body strong { color:var(--ink); }
 .art-body ul, .art-body ol { margin:0 0 18px 22px; color:var(--ink2); }
 .art-body li { margin-bottom:8px; }
-.art-body a { color:var(--accent); text-decoration:underline; text-underline-offset:2px; }
+.art-body a { color:var(--accent-ink); text-decoration:underline; text-underline-offset:2px; }
 
 /* table of contents */
 .toc { background:var(--bg2); border:1.5px solid var(--border-s); border-left:4px solid var(--accent); padding:18px 22px; margin-bottom:32px; }
 .toc strong { display:block; font-family:var(--ff-h); font-size:1.1rem; letter-spacing:.03em; color:var(--ink); margin-bottom:8px; }
 .toc ol { margin:0 0 0 20px; }
 .toc a { color:var(--ink2); text-decoration:none; }
-.toc a:hover { color:var(--accent); }
+.toc a:hover { color:var(--accent-ink); }
 
 /* callout box */
 .callout { background:var(--light-o); border:1.5px solid var(--accent); padding:18px 22px; margin:24px 0; font-size:.95rem; color:var(--ink); }
-.callout strong { color:var(--accent); }
+.callout strong { color:var(--accent-ink); }
 
 /* responsive table */
 .art-table-wrap { overflow-x:auto; margin:22px 0; }
@@ -117,7 +118,7 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 .art-faq details { border:1.5px solid var(--border-s); border-radius:2px; margin-bottom:10px; background:var(--bg2); }
 .art-faq summary { cursor:pointer; padding:14px 18px; font-family:var(--ff-h); font-weight:700; font-size:1.05rem; color:var(--ink); letter-spacing:.02em; list-style:none; }
 .art-faq summary::-webkit-details-marker { display:none; }
-.art-faq summary::after { content:'+'; float:right; color:var(--accent); font-weight:800; }
+.art-faq summary::after { content:'+'; float:right; color:var(--accent-ink); font-weight:800; }
 .art-faq details[open] summary::after { content:'–'; }
 .art-faq .a { padding:0 18px 16px; color:var(--ink2); font-size:.92rem; }
 
@@ -128,7 +129,7 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 
 /* related / back link */
 .art-nav-links { margin-top:26px; padding-top:20px; border-top:1px solid var(--border); font-size:.9rem; }
-.art-nav-links a { color:var(--accent); text-decoration:none; font-weight:700; }
+.art-nav-links a { color:var(--accent-ink); text-decoration:none; font-weight:700; }
 
 /* ─── LISTA PORADNIKA (blog index) ─── */
 .blog-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:22px; margin-top:10px; }
@@ -136,7 +137,7 @@ main { max-width:880px; margin:0 auto; padding:56px 5%; }
 .blog-card:hover { border-color:var(--accent); transform:translateY(-4px); }
 .blog-card .thumb { aspect-ratio:16/9; background:var(--bg3) center/cover no-repeat; }
 .blog-card .body { padding:16px 18px 20px; }
-.blog-card .cat { font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); }
+.blog-card .cat { font-size:.7rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--accent-ink); }
 .blog-card h2 { font-family:var(--ff-h); font-size:1.3rem; font-weight:800; color:var(--ink); line-height:1.1; letter-spacing:.02em; margin:6px 0 8px; }
 .blog-card p { font-size:.85rem; color:var(--ink2); margin:0; line-height:1.5; }
 

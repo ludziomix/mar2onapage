@@ -5,21 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <!-- ─── SEO PODSTAWOWE ─── -->
-  <title>Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MarBud</title>
-  <meta name="description" content="Ocieplenia domów i termomodernizacja w Warszawie – styropian, wełna mineralna, pianka PUR. Ocieplamy ściany, poddasza i fundamenty. Cała Warszawa i okolice."/>
+  <title>Ocieplenia Domów Warszawa – Gwarancja 5 Lat, Wycena 24h</title>
+  <meta name="description" content="Konkretna wycena z ceną za m² w 24h, bez zobowiązań. Umowa, pisemna gwarancja i rozliczenie etapami — wiesz, za co płacisz. Dojazd i pomiar gratis, cała Warszawa."/>
   <meta name="robots" content="index, follow"/>
   <!-- DO UZUPEŁNIENIA: jeśli kupisz domenę warszawską, podmień canonical + sitemap.xml + CNAME -->
   <link rel="canonical" href="https://ocieplenia.warszawa.pl/"/>
 
   <!-- ─── FAVICON ─── -->
   <link rel="icon" type="image/png" href="favicon.png"/>
-  <link rel="apple-touch-icon" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 
   <!-- ─── OPEN GRAPH / SOCIAL ─── -->
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="pl_PL"/>
-  <meta property="og:title" content="Ocieplenia domów Warszawa | Termomodernizacja i elewacje – MarBud"/>
-  <meta property="og:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
+  <meta property="og:title" content="Ocieplenia Domów Warszawa – Gwarancja 5 Lat, Wycena 24h"/>
+  <meta property="og:description" content="Konkretna wycena z ceną za m² w 24h, bez zobowiązań. Umowa, pisemna gwarancja i rozliczenie etapami. Dojazd i pomiar gratis, cała Warszawa."/>
   <meta property="og:url" content="https://ocieplenia.warszawa.pl/"/>
   <meta property="og:image" content="https://ocieplenia.warszawa.pl/1.jpg"/>
   <meta property="og:image:width" content="1280"/>
@@ -28,8 +28,8 @@
 
   <!-- ─── TWITTER / X CARD ─── -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="Ocieplenia domów Warszawa | Termomodernizacja – MarBud"/>
-  <meta name="twitter:description" content="Ocieplenia domów w Warszawie i okolicach – styropian, wełna, pianka PUR. Bezpłatna wycena."/>
+  <meta name="twitter:title" content="Ocieplenia Domów Warszawa – Gwarancja 5 Lat, Wycena 24h"/>
+  <meta name="twitter:description" content="Konkretna wycena z ceną za m² w 24h, bez zobowiązań. Umowa, pisemna gwarancja i rozliczenie etapami. Dojazd i pomiar gratis, cała Warszawa."/>
   <meta name="twitter:image" content="https://ocieplenia.warszawa.pl/1.jpg"/>
 
   <!-- ─── GEO / LOCAL ─── -->
@@ -174,7 +174,7 @@
         "name": "Czy na wykonane ocieplenie jest gwarancja?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy gwarancji — szczegółowe warunki ustalamy w umowie przed rozpoczęciem robót. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną."
+          "text": "Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy pisemnej gwarancji na 5 lat. Przed startem robót podpisujemy umowę z rozliczeniem etapami — płacisz za zakończone etapy, więc zawsze wiesz, za co płacisz. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną."
         }
       },
       {
@@ -214,13 +214,15 @@
       --bg3:      #eef0f3;
       --ink:      #1a1f2e;
       --ink2:     #4a5060;
-      --accent:   #c1121f;
-      /* czerwień do linków NA CIEMNYM tle — #c1121f daje tam tylko 2.64:1 (WCAG wymaga 4.5:1) */
-      --accent-on-dark: #f06470;
-      --accent2:  #9a0e18;
-      --light-o:  #fcebec;
-      --border:   #e4e6ea;
-      --border-s: #d3d7df;   /* mocniejsza krawędź kart */
+      /* Paleta z logo: #ff9e1b (tło) + #e4610a (drzwi).
+         Jasny pomarańcz NIE nadaje się na tekst na białym (2.07:1) — do tego --accent-ink. */
+      --accent:   #ff9e1b;
+      --accent-ink: #b34e05;      /* pomarańcz przyciemniony: linki/tekst na jasnym tle (5.2:1) */
+      --accent-on-dark: #ff9e1b;  /* na granacie daje 7.9:1 */
+      --accent2:  #e4610a;   /* kolor drzwi z logo — hover przycisków */
+      --light-o:  #fff4e3;   /* ciepły jasny podkład pod plakietki */
+      --border:   #e8eaee;
+      --border-s: #dcdfe5;   /* krawędź kart — celowo delikatna */
       --ff-h:     'Barlow Condensed', sans-serif;
       --ff-b:     'Nunito', sans-serif;
       --ease:     cubic-bezier(.25,.8,.25,1);
@@ -230,7 +232,7 @@
     body { font-family: var(--ff-b); background: var(--bg); color: var(--ink); overflow-x: hidden; line-height: 1.6; }
     ::-webkit-scrollbar { width: 5px; }
     ::-webkit-scrollbar-track { background: var(--bg2); }
-    ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb { background: var(--border-s); border-radius: 3px; }
 
     /* dostępność – widoczny focus dla klawiatury */
     a:focus-visible, button:focus-visible, summary:focus-visible,
@@ -274,7 +276,7 @@
     }
     .nav-phone-link:hover { color: var(--accent); }
     .nav-btn {
-      background: var(--accent); color: #fff;
+      background: var(--accent); color: var(--ink);
       padding: 9px 22px; font-family: var(--ff-b);
       font-size: .82rem; font-weight: 700; letter-spacing: .08em;
       text-transform: uppercase; text-decoration: none;
@@ -323,8 +325,8 @@
 
     .hero-badge {
       display: inline-flex; align-items: center; gap: 8px;
-      background: var(--light-o); border: 1.5px solid rgba(193,18,31,.3);
-      color: var(--accent); padding: 6px 16px; margin-bottom: 24px;
+      background: var(--light-o); border: 1.5px solid rgba(255,158,27,.45);
+      color: var(--accent-ink); padding: 6px 16px; margin-bottom: 24px;
       font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase;
       opacity: 0; transform: translateY(14px);
       animation: fadeUp .5s .1s var(--ease) forwards;
@@ -375,8 +377,8 @@
       transition: all .3s var(--ease);
     }
     .btn .ico { width: 1.05em; height: 1.05em; }
-    .btn-orange { background: var(--accent); color: #fff; border-color: var(--accent); }
-    .btn-orange:hover { background: var(--accent2); border-color: var(--accent2); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(193,18,31,.35); }
+    .btn-orange { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+    .btn-orange:hover { background: var(--accent2); border-color: var(--accent2); transform: translateY(-3px); box-shadow: 0 10px 28px rgba(228,97,10,.35); }
     .btn-outline { background: transparent; color: var(--ink); border-color: var(--ink); }
     .btn-outline:hover { background: var(--ink); color: #fff; transform: translateY(-2px); }
 
@@ -387,8 +389,8 @@
       flex-wrap: wrap;
       opacity: 0; animation: fadeUp .5s .88s var(--ease) forwards;
     }
-    .hero-strip span { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(255,255,255,.85); }
-    .hero-strip a { font-family: var(--ff-h); font-size: 1.5rem; font-weight: 900; letter-spacing: .08em; color: #fff; text-decoration: none; }
+    .hero-strip span { font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: rgba(26,31,46,.75); }
+    .hero-strip a { font-family: var(--ff-h); font-size: 1.5rem; font-weight: 900; letter-spacing: .08em; color: var(--ink); text-decoration: none; }
 
     @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
 
@@ -405,7 +407,7 @@
     /* ─── STATS BAR ─── */
     .stats-bar {
       display: grid; grid-template-columns: repeat(4,1fr);
-      background: var(--bg2);
+      background: var(--bg);
       border-bottom: 1px solid var(--border);
     }
     .stat-item {
@@ -413,12 +415,12 @@
       border-right: 1px solid var(--border);
     }
     .stat-item:last-child { border-right: none; }
-    .stat-num { font-family: var(--ff-h); font-size: 2.6rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .stat-num { font-family: var(--ff-h); font-size: 2.6rem; font-weight: 900; color: var(--ink); line-height: 1; }
     .stat-lbl { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink2); margin-top: 4px; }
 
     /* ─── SECTIONS ─── */
-    section { padding: 88px 5%; }
-    .sec-tag { font-size: .68rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; display: block; }
+    section { padding: 100px 5%; }
+    .sec-tag { font-size: .68rem; font-weight: 700; letter-spacing: .24em; text-transform: uppercase; color: var(--ink2); margin-bottom: 10px; display: block; }
     .sec-title { font-family: var(--ff-h); font-size: clamp(2.2rem,5vw,3.6rem); font-weight: 900; line-height: .95; letter-spacing: .02em; color: var(--ink); }
     .sec-bar { width: 44px; height: 3px; background: var(--accent); margin: 14px 0 28px; }
 
@@ -439,7 +441,7 @@
     .wi-icon { flex-shrink:0; width:44px; height:44px; background: var(--light-o); display:flex; align-items:center; justify-content:center; transition: background .3s; }
     .wi-icon .ico { width: 22px; height: 22px; color: var(--accent); transition: color .3s; }
     .wi:hover .wi-icon { background: var(--accent); }
-    .wi:hover .wi-icon .ico { color: #fff; }
+    .wi:hover .wi-icon .ico { color: var(--ink); }
     .wi-t { font-size: .93rem; font-weight: 700; color: var(--ink); margin-bottom: 2px; }
     .wi-d { font-size: .82rem; font-weight: 400; color: var(--ink2); line-height: 1.6; }
 
@@ -451,26 +453,25 @@
       padding: 36px 28px; position: relative; overflow: hidden;
       transition: transform .3s var(--ease), box-shadow .3s, border-color .3s;
     }
-    .srv-card:hover { transform: translateY(-5px); box-shadow: 0 14px 44px rgba(0,0,0,.10); border-color: var(--accent); }
+    .srv-card:hover { transform: translateY(-4px); box-shadow: 0 10px 28px rgba(26,31,46,.08); border-color: var(--accent); }
     .srv-card::before { content:''; position:absolute; bottom:0; left:0; width:0; height:3px; background:var(--accent); transition:width .4s var(--ease); }
     .srv-card:hover::before { width:100%; }
     .srv-em { display: inline-flex; width: 40px; height: 40px; margin-bottom: 16px; color: var(--accent); }
     .srv-em .ico { width: 32px; height: 32px; }
     .srv-name { font-family: var(--ff-h); font-size: 1.4rem; font-weight: 800; color: var(--ink); letter-spacing:.04em; margin-bottom: 8px; }
     .srv-name a { color: inherit; text-decoration: none; }
-    .srv-name a:hover { color: var(--accent); }
+    .srv-name a:hover { color: var(--accent-ink); }
     .srv-desc { font-size: .83rem; font-weight: 400; color: var(--ink2); line-height: 1.65; }
-    .srv-pill { margin-top:14px; display:inline-block; background:var(--light-o); color:var(--accent); font-size:.65rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:4px 12px; }
+    .srv-pill { margin-top:14px; display:inline-block; background:var(--light-o); color:var(--accent-ink); font-size:.65rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; padding:4px 12px; }
 
-    /* ─── ADVANTAGE (ciemne przełamanie rytmu) ─── */
-    #advantage { background: var(--ink); }
-    #advantage .sec-title { color: #fff; }
-    .adv-wrap { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 48px; }
+    /* ─── ADVANTAGE (jasna, czysta) ─── */
+    #advantage { background: var(--bg); }
+    .adv-wrap { display: grid; grid-template-columns: repeat(4,1fr); gap: 14px; margin-top: 48px; }
     .adv-card {
-      background: rgba(255,255,255,.05); padding: 40px 30px; position: relative; overflow: hidden;
-      transition: background .3s, transform .3s;
+      background: var(--bg2); border: 1px solid var(--border); padding: 40px 30px; position: relative; overflow: hidden;
+      transition: background .3s, transform .3s, border-color .3s;
     }
-    .adv-card:hover { background: rgba(255,255,255,.09); transform: translateY(-4px); }
+    .adv-card:hover { background: #fff; border-color: var(--border-s); transform: translateY(-4px); }
     .adv-card.hero-adv {
       background: var(--accent); grid-column: span 2;
     }
@@ -478,19 +479,19 @@
     .adv-bg-num {
       font-family: var(--ff-h); font-size: 5.5rem; font-weight: 900;
       position:absolute; top:10px; right:18px; line-height:1;
-      color: rgba(255,255,255,.06); pointer-events:none;
+      color: rgba(26,31,46,.05); pointer-events:none;
     }
-    .adv-card.hero-adv .adv-bg-num { color: rgba(255,255,255,.16); }
-    .adv-ico { width:50px; height:50px; background:rgba(255,255,255,.1); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color: var(--accent); }
+    .adv-card.hero-adv .adv-bg-num { color: rgba(26,31,46,.12); }
+    .adv-ico { width:50px; height:50px; background:var(--light-o); display:flex; align-items:center; justify-content:center; margin-bottom:18px; color: var(--accent2); }
     .adv-ico .ico { width: 24px; height: 24px; }
-    .adv-card.hero-adv .adv-ico { background:rgba(255,255,255,.2); color: #fff; }
-    .adv-title { font-family:var(--ff-h); font-size:1.55rem; font-weight:800; color:#fff; letter-spacing:.04em; margin-bottom:10px; }
-    .adv-text { font-size:.84rem; font-weight:400; color:rgba(255,255,255,.72); line-height:1.65; }
-    .adv-card.hero-adv .adv-text { color:rgba(255,255,255,.85); }
-    .adv-tag { margin-top:16px; font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent); display:flex; align-items:center; gap:8px; }
+    .adv-card.hero-adv .adv-ico { background:rgba(26,31,46,.1); color: var(--ink); }
+    .adv-title { font-family:var(--ff-h); font-size:1.55rem; font-weight:800; color:var(--ink); letter-spacing:.04em; margin-bottom:10px; }
+    .adv-text { font-size:.84rem; font-weight:400; color:var(--ink2); line-height:1.65; }
+    .adv-card.hero-adv .adv-text { color:rgba(26,31,46,.78); }
+    .adv-tag { margin-top:16px; font-size:.72rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--accent-ink); display:flex; align-items:center; gap:8px; }
     .adv-tag::before { content:''; width:24px; height:2px; background:var(--accent); }
-    .adv-card.hero-adv .adv-tag { color:rgba(255,255,255,.9); }
-    .adv-card.hero-adv .adv-tag::before { background:rgba(255,255,255,.7); }
+    .adv-card.hero-adv .adv-tag { color:var(--ink); }
+    .adv-card.hero-adv .adv-tag::before { background:rgba(26,31,46,.5); }
 
     /* ─── PROCESS ─── */
     #process { background: var(--bg2); }
@@ -500,8 +501,8 @@
       padding: 32px 24px; text-align: center;
       transition: border-color .3s, transform .3s, box-shadow .3s;
     }
-    .proc-card:hover { border-color: var(--accent); transform:translateY(-4px); box-shadow:0 12px 34px rgba(0,0,0,.09); }
-    .proc-num { font-family:var(--ff-h); font-size:3.2rem; font-weight:900; color:var(--accent); line-height:1; }
+    .proc-card:hover { border-color: var(--accent); transform:translateY(-3px); box-shadow:0 10px 26px rgba(26,31,46,.07); }
+    .proc-num { font-family:var(--ff-h); font-size:3.2rem; font-weight:900; color:var(--accent-ink); line-height:1; }
     .proc-title { font-family:var(--ff-h); font-size:1.2rem; font-weight:800; color:var(--ink); letter-spacing:.04em; margin:10px 0 6px; }
     .proc-desc { font-size:.8rem; color:var(--ink2); line-height:1.6; }
 
@@ -516,14 +517,14 @@
       gap: 14px;
     }
     .real-card { background: var(--bg2); border: 1.5px solid var(--border-s); overflow: hidden; transition: border-color .3s, transform .3s, box-shadow .3s; }
-    .real-card:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 14px 38px rgba(0,0,0,.10); }
+    .real-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 26px rgba(26,31,46,.08); }
     .real-photo { height: 230px; overflow: hidden; }
     .real-photo img { width:100%; height:100%; object-fit:cover; display:block; transition: transform .55s var(--ease); }
     .real-card:hover .real-photo img { transform: scale(1.06); }
     .real-meta { padding: 16px 18px; }
     .real-loc { font-family: var(--ff-h); font-size: 1.15rem; font-weight: 800; color: var(--ink); letter-spacing: .03em; }
     .real-tags { margin-top: 8px; display: flex; flex-wrap: wrap; gap: 6px; }
-    .real-tag { background: var(--light-o); color: var(--accent); font-size: .66rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 10px; }
+    .real-tag { background: var(--light-o); color: var(--accent-ink); font-size: .66rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 3px 10px; }
 
     /* ─── AREA ─── */
     #area { background: var(--bg2); }
@@ -539,15 +540,15 @@
     .area-item { display:flex; align-items:center; gap:10px; padding:11px 0; border-bottom:1px solid var(--border); font-size:.88rem; font-weight:600; color:var(--ink); }
     .area-item::before {
       content:''; width:15px; height:15px; flex-shrink:0;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c1121f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center/contain no-repeat;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23e4610a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z'/%3E%3Ccircle cx='12' cy='10' r='3'/%3E%3C/svg%3E") center/contain no-repeat;
     }
     .area-note { margin-top:20px; font-size:.83rem; font-weight:400; color:var(--ink2); line-height:1.65; padding:16px 20px; background:var(--light-o); border-left:3px solid var(--accent); }
     a.area-item { text-decoration:none; transition:color .2s; }
-    a.area-item:hover { color:var(--accent); }
+    a.area-item:hover { color:var(--accent-ink); }
     .area-prose { margin-top: 22px; font-size: .9rem; color: var(--ink2); line-height: 1.75; }
 
     /* ─── FAQ ─── */
-    #faq { background: var(--bg2); }
+    #faq { background: var(--bg); }
     .faq-wrap { max-width: 820px; margin: 44px auto 0; }
     .faq-item { background: var(--bg); border: 1.5px solid var(--border-s); margin-bottom: 12px; transition: border-color .3s; }
     .faq-item[open] { border-color: var(--accent); }
@@ -557,12 +558,12 @@
       font-family: var(--ff-h); font-size: 1.2rem; font-weight: 700; color: var(--ink); letter-spacing: .02em;
     }
     .faq-item summary::-webkit-details-marker { display: none; }
-    .faq-item summary::after { content: '+'; font-size: 1.8rem; font-weight: 400; color: var(--accent); line-height: 1; transition: transform .3s; }
+    .faq-item summary::after { content: '+'; font-size: 1.8rem; font-weight: 400; color: var(--accent-ink); line-height: 1; transition: transform .3s; }
     .faq-item[open] summary::after { transform: rotate(45deg); }
     .faq-item .faq-a { padding: 0 26px 24px; font-size: .92rem; color: var(--ink2); line-height: 1.75; }
 
     /* ─── CONTACT ─── */
-    #contact { background: var(--accent); padding: 80px 5%; }
+    #contact { background: var(--ink); padding: 96px 5%; }
     .contact-inner { max-width: 1040px; margin:0 auto; }
     .contact-head { text-align:center; max-width:700px; margin:0 auto 44px; }
     .contact-head h2 { font-family:var(--ff-h); font-size:clamp(2.4rem,6vw,4.2rem); font-weight:900; color:#fff; line-height:.95; letter-spacing:.02em; }
@@ -581,7 +582,7 @@
       border:1.5px solid var(--border-s); background:var(--bg2); color:var(--ink);
       transition:border-color .2s, background .2s;
     }
-    .field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--accent); background:#fff; }
+    .field input:focus, .field select:focus, .field textarea:focus { outline:none; border-color:var(--accent2); background:#fff; }
     .field textarea { resize:vertical; min-height:96px; }
     .form-card button { width:100%; border:none; margin-top:6px; justify-content:center; }
     .form-note { margin-top:12px; font-size:.72rem; color:var(--ink2); text-align:center; }
@@ -623,7 +624,7 @@
     /* ─── MAPA (placeholder przed zgodą) ─── */
     .map-ph { text-align:center; padding:24px; }
     .map-ph p { font-size:.85rem; color:var(--ink2); margin-bottom:14px; max-width:300px; line-height:1.55; }
-    .form-note a { color:var(--accent); text-decoration:underline; }
+    .form-note a { color:var(--accent-ink); text-decoration:underline; }
 
     /* ─── COOKIE BANNER (RODO) ─── */
     .cookie-bar {
@@ -641,7 +642,7 @@
       letter-spacing:.06em; text-transform:uppercase; cursor:pointer; border:1.5px solid;
       transition:background .25s, transform .2s;
     }
-    .cookie-accept { background:var(--accent); border-color:var(--accent); color:#fff; }
+    .cookie-accept { background:var(--accent); border-color:var(--accent); color:var(--ink); }
     .cookie-accept:hover { background:var(--accent2); border-color:var(--accent2); transform:translateY(-2px); }
     .cookie-reject { background:transparent; border-color:rgba(255,255,255,.4); color:#fff; }
     .cookie-reject:hover { border-color:#fff; }
@@ -798,7 +799,7 @@
 <!-- PASEK ZAUFANIA -->
 <div class="trust-bar">
   <div class="trust-item"><svg class="ico trust-ico"><use href="#i-award"/></svg> <b>15+ lat</b> doświadczenia</div>
-  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-shield"/></svg> Gwarancja na wykonanie</div>
+  <div class="trust-item"><svg class="ico trust-ico"><use href="#i-shield"/></svg> Pisemna gwarancja 5 lat</div>
   <div class="trust-item"><svg class="ico trust-ico"><use href="#i-receipt"/></svg> NIP <b>849-137-50-08</b></div>
   <div class="trust-item"><svg class="ico trust-ico"><use href="#i-pin"/></svg> Cała Warszawa i okolice</div>
 </div>
@@ -961,7 +962,7 @@
     <div class="proc-card rv d1">
       <div class="proc-num">02</div>
       <h3 class="proc-title">Bezpłatna wycena</h3>
-      <p class="proc-desc">Dostajesz szczegółowy, przejrzysty kosztorys — bez opłat i bez zobowiązań</p>
+      <p class="proc-desc">W 24h dostajesz konkretny kosztorys z ceną za m² — bez opłat i bez zobowiązań. Podpisujemy umowę z rozliczeniem etapami: wiesz, za co płacisz</p>
     </div>
     <div class="proc-card rv d2">
       <div class="proc-num">03</div>
@@ -971,7 +972,7 @@
     <div class="proc-card rv d3">
       <div class="proc-num">04</div>
       <h3 class="proc-title">Odbiór i gwarancja</h3>
-      <p class="proc-desc">Sprzątamy teren, przekazujemy gotową elewację, wystawiamy fakturę i obejmujemy wykonanie gwarancją</p>
+      <p class="proc-desc">Sprzątamy teren, przekazujemy gotową elewację, wystawiamy fakturę i obejmujemy wykonanie pisemną gwarancją na 5 lat</p>
     </div>
   </div>
 </section>
@@ -1092,7 +1093,7 @@
     </details>
     <details class="faq-item">
       <summary>Czy na wykonane ocieplenie jest gwarancja?</summary>
-      <div class="faq-a">Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy gwarancji — szczegółowe warunki ustalamy w umowie przed rozpoczęciem robót. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną.</div>
+      <div class="faq-a">Tak. Na wykonane prace ociepleniowe i elewacyjne udzielamy pisemnej gwarancji na 5 lat. Przed startem robót podpisujemy umowę z rozliczeniem etapami — płacisz za zakończone etapy, więc zawsze wiesz, za co płacisz. Pracujemy na sprawdzonych systemach ociepleń i zgodnie ze sztuką budowlaną.</div>
     </details>
     <details class="faq-item">
       <summary>Styropian czy pianka PUR — co wybrać?</summary>
