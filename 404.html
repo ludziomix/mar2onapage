@@ -5,17 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Strona nie istnieje (404) | MarBud Warszawa</title>
   <meta name="robots" content="noindex, follow"/>
-  <link rel="icon" type="image/png" href="/favicon.png"/>
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
-  <link rel="stylesheet" href="/fonts.css"/>
-  <link rel="stylesheet" href="/podstrona.css"/>
+  <base href="/">
+  <script>if (location.protocol === 'file:') document.querySelector('base').remove();</script>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+  <link rel="stylesheet" href="fonts.css"/>
+  <link rel="stylesheet" href="podstrona.css"/>
+  <link rel="stylesheet" href="cookies.css">
+  <script src="cookies.js" defer></script>
 </head>
 <body>
   <nav class="sub-nav">
-    <a href="/index.html" class="logo" aria-label="MarBud — strona główna"><img src="/MARBUD-logo-bialy.png" width="300" height="300" alt="MarBud"/></a>
+    <a href="index.html" class="logo" aria-label="MarBud — strona główna"><img src="MARBUD-logo-bialy.png" width="300" height="300" alt="MarBud"/></a>
     <div class="nav-right">
       <a href="tel:+48535685720" class="nav-phone">535 685 720</a>
-      <a href="/index.html" class="nav-btn">Strona główna</a>
+      <a href="index.html" class="nav-btn">Strona główna</a>
     </div>
   </nav>
 
@@ -24,14 +28,14 @@
     <h1>Nie znaleziono strony</h1>
     <p>Sprawdź pisownię adresu lub wybierz interesujący Cię zakres prac.</p>
     <div class="links">
-      <a href="/index.html#services" class="btn btn-orange">Ocieplenia domów</a>
-      <a href="/index.html#remonty" class="btn btn-outline" style="color:var(--ink);border-color:var(--ink);">Remonty i wykończenia</a>
+      <a href="index.html#services" class="btn btn-orange">Ocieplenia domów</a>
+      <a href="index.html#remonty" class="btn btn-outline" style="color:var(--ink);border-color:var(--ink);">Remonty i wykończenia</a>
     </div>
   </main>
 
   <footer class="sub-foot">
     <p>Firma Budowlana MARBUD DOROTA DARDA-KALINOWSKA · NIP 8491375008 · REGON 525485703<br>
-      <a href="/index.html#contact">Kontakt</a> · <a href="/polityka-prywatnosci.html">Polityka prywatności</a></p>
+      <a href="index.html#contact">Kontakt</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a></p>
   </footer>
 </body>
 </html>
