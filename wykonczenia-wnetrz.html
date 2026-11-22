@@ -11,14 +11,14 @@
   <meta property="og:title" content="Wykończenia wnętrz w Warszawie i okolicach | MarBud">
   <meta property="og:description" content="Wykończenia mieszkań i domów w Warszawie. Prace we wnętrzach od stanu surowego zamkniętego lub deweloperskiego. Ściany, podłogi i detale do wyceny.">
   <meta property="og:url" content="https://ocieplenia.warszawa.pl/wykonczenia-wnetrz.html">
-  <meta property="og:image" content="https://ocieplenia.warszawa.pl/wnetrza-salon.webp">
-  <meta property="og:image:alt" content="Wizualizacja przykładowej aranżacji salonu">
+  <meta property="og:image" content="https://ocieplenia.warszawa.pl/logo.png">
+  <meta property="og:image:alt" content="Logo MarBud">
   <link rel="icon" href="favicon.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="podstrona.css">
   <link rel="stylesheet" href="wnetrza.css">
-  <link rel="preload" as="image" href="wnetrza-salon.webp" imagesrcset="wnetrza-salon-640.webp 640w, wnetrza-salon.webp 1200w" imagesizes="(max-width: 720px) 90vw, (max-width: 1244px) 36vw, 447px" fetchpriority="high">
+  <link rel="preload" as="font" type="font/woff2" href="fonts/barlow-condensed-900.woff2" crossorigin>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -87,10 +87,14 @@
           <p class="intro-text">Wykańczamy nowe mieszkania i domy. Jeśli masz już klucze od dewelopera albo dom jest w stanie surowym zamkniętym, pomożemy ułożyć kolejność prac i dobrać zakres do tego, co jest gotowe na miejscu.</p>
           <a class="btn btn-orange" href="#wycena">Zapytaj o wycenę</a>
         </div>
-        <figure class="service-figure">
-          <img src="wnetrza-salon.webp" srcset="wnetrza-salon-640.webp 640w, wnetrza-salon.webp 1200w" sizes="(max-width: 720px) 90vw, (max-width: 1244px) 36vw, 447px" width="1200" height="800" fetchpriority="high" alt="Jasny salon z drewnianą podłogą i fotelem przy oknie">
-          <figcaption style="margin-top: .5rem; color: #dce0e8; font-size: .84rem;">Wizualizacja przykładowej aranżacji</figcaption>
-        </figure>
+        <aside class="service-note">
+          <h2>Co masz już wybrane?</h2>
+          <ul>
+            <li>Rodzaj podłogi w każdym pomieszczeniu i miejsce łączenia z płytkami.</li>
+            <li>Model drzwi, typ ościeżnic i wysokość listew przypodłogowych.</li>
+            <li>Układ mebli w zabudowie i terminy ustalone ze stolarzem.</li>
+          </ul>
+        </aside>
       </div>
     </header>
     <section class="interior-wrap scope-grid">
@@ -99,11 +103,11 @@
         <p>Na początku sprawdzamy ściany, sufity i podłoża pod podłogi. Od ich stanu zależy, kiedy można wejść z poszczególnymi pracami i które materiały zamówić jako pierwsze.</p>
       </div>
       <div class="work-list">
-        <div>
+        <div id="stan-surowy">
           <h3>Dom w stanie surowym zamkniętym</h3>
           <p>Przy oględzinach ustalamy, które prace instalacyjne są jeszcze przed Tobą oraz kiedy będą gotowe podłoża. Na tej podstawie planujemy przygotowanie i wykończenie poszczególnych pomieszczeń.</p>
         </div>
-        <div>
+        <div id="stan-deweloperski">
           <h3>Mieszkanie od dewelopera</h3>
           <p>Sprawdzamy stan tynków i wylewek oraz miejsca styku różnych materiałów. Omawiamy gładzie, kolory ścian, rodzaj podłogi i sposób wykończenia przy drzwiach.</p>
         </div>
@@ -118,6 +122,18 @@
         <div>
           <h2>Co przyda się do wyceny?</h2>
           <p>Przygotuj rzut z wymiarami i zdjęcia obecnego stanu. Jeśli masz już wybrane podłogi, płytki lub drzwi, podaj ich modele. Dzięki temu można omówić grubości warstw, łączenia materiałów i zakres prac w każdym pomieszczeniu.</p>
+          <details open>
+            <summary>Mam klucze i rzut od dewelopera. Od czego zacząć?</summary>
+            <p>Przejdź przez mieszkanie z rzutem i zaznacz planowane podłogi, drzwi, szafy oraz zabudowę kuchenną. Wskaż też usterki zgłoszone przy odbiorze. Kolejność wykończenia można wtedy dopasować do poprawek dewelopera i pomiarów stolarza.</p>
+          </details>
+          <details>
+            <summary>Co ustalić przed połączeniem paneli z płytkami?</summary>
+            <p>Podaj modele materiałów po obu stronach przejścia i pokaż, gdzie mają wypaść drzwi. Grubość wybranej podłogi, podkładu i płytek wpływa na wysokość gotowej posadzki i sposób wykończenia styku.</p>
+          </details>
+          <details>
+            <summary>Kiedy uzgodnić listwy i drzwi wewnętrzne?</summary>
+            <p>Warto wybrać je przed wykończeniem podłóg. Szerokość opaski drzwiowej i kształt listwy wpływają na to, jak połączą się przy ościeżnicy. Jeśli drzwi montuje osobna ekipa, jej termin i wymagane wymiary otworów uwzględniamy w kolejności prac.</p>
+          </details>
         </div>
         <div class="contact-panel">
           <h3>Umów oględziny wnętrza</h3>

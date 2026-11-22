@@ -20,17 +20,20 @@
   <meta property="og:title" content="Remonty, wykończenia wnętrz i ocieplenia w Warszawie | MarBud"/>
   <meta property="og:description" content="MarBud wykonuje remonty kapitalne, wykończenia od stanu surowego i deweloperskiego, malowanie wnętrz oraz ocieplenia domów w Warszawie i okolicach. Umów wycenę."/>
   <meta property="og:url" content="https://ocieplenia.warszawa.pl/"/>
-  <meta property="og:image" content="https://ocieplenia.warszawa.pl/wnetrza-salon.webp"/>
-  <meta property="og:image:alt" content="Wizualizacja przykładowej aranżacji salonu"/>
+  <meta property="og:image" content="https://ocieplenia.warszawa.pl/zdjecia/dom-od-ogrodu-1200.webp"/>
+  <meta property="og:image:alt" content="Jasny dom z pomarańczowym dachem widziany od strony ogrodu"/>
   <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="800"/>
+  <meta property="og:image:height" content="900"/>
   <meta property="og:site_name" content="MarBud"/>
 
   <!-- ─── TWITTER / X CARD ─── -->
   <meta name="twitter:card" content="summary_large_image"/>
   <meta name="twitter:title" content="Remonty, wykończenia wnętrz i ocieplenia w Warszawie | MarBud"/>
   <meta name="twitter:description" content="MarBud wykonuje remonty kapitalne, wykończenia od stanu surowego i deweloperskiego, malowanie wnętrz oraz ocieplenia domów w Warszawie i okolicach. Umów wycenę."/>
-  <meta name="twitter:image" content="https://ocieplenia.warszawa.pl/wnetrza-salon.webp"/>
+  <meta name="twitter:image" content="https://ocieplenia.warszawa.pl/zdjecia/dom-od-ogrodu-1200.webp"/>
+  <link rel="preload" as="image" href="zdjecia/dom-od-ogrodu-1200.webp"
+        imagesrcset="zdjecia/dom-od-ogrodu-640.webp 640w, zdjecia/dom-od-ogrodu-1200.webp 1200w"
+        imagesizes="(max-width: 740px) 100vw, 51vw" fetchpriority="high"/>
 
   <meta name="theme-color" content="#1a1f2e"/>
 
@@ -547,7 +550,7 @@
   <div class="nav-menu" id="navMenu">
     <a href="#remonty" class="nav-link">Remonty i wnętrza</a>
     <a href="#services" class="nav-link">Ocieplenia</a>
-    <a href="#process" class="nav-link">Etapy prac</a>
+    <a href="#gallery" class="nav-link">Zdjęcia</a>
     <a href="#area" class="nav-link">Obszar</a>
     <a href="#faq" class="nav-link">FAQ</a>
   </div>
@@ -572,10 +575,10 @@
     </div>
   </div>
   <figure class="hero-photo">
-    <img src="wnetrza-salon.webp" srcset="wnetrza-salon-640.webp 640w, wnetrza-salon.webp 1200w"
-         sizes="(max-width: 740px) 100vw, 51vw" width="1200" height="800"
-         alt="Jasny salon z drewnianą podłogą i fotelem przy oknie" fetchpriority="high">
-    <figcaption>Wizualizacja przykładowej aranżacji</figcaption>
+    <img src="zdjecia/dom-od-ogrodu-1200.webp" srcset="zdjecia/dom-od-ogrodu-640.webp 640w, zdjecia/dom-od-ogrodu-1200.webp 1200w"
+         sizes="(max-width: 740px) 100vw, 51vw" width="1200" height="900"
+         alt="Jasny dom z pomarańczowym dachem i tarasem od strony ogrodu" fetchpriority="high">
+    <figcaption><a href="#gallery">Zobacz galerię elewacji <span aria-hidden="true">↓</span></a></figcaption>
   </figure>
 </section>
 
@@ -583,23 +586,32 @@
   <div class="interior-wrap">
     <div class="interior-intro">
       <h2 id="remonty-title">Remonty i wykończenia wnętrz</h2>
-      <p>Inaczej planuje się kapitalny remont mieszkania, a inaczej pierwsze wykończenie domu. Wybierz zakres odpowiadający Twoim planom.</p>
+      <p>Na jakim etapie jest Twoje wnętrze? Wybierz sytuację najbliższą swojej i sprawdź, co warto ustalić przed rozpoczęciem prac.</p>
     </div>
     <div class="interior-offers">
       <a class="interior-offer" href="remonty-kapitalne.html">
-        <h3>Remonty kapitalne</h3>
-        <p>Od usunięcia zużytych wykończeń po nowe ściany i podłogi w istniejącym mieszkaniu.</p>
-        <span aria-hidden="true">↗</span>
+        <svg class="ico" aria-hidden="true"><use href="#i-helmet"/></svg>
+        <h3>Remont kapitalny</h3>
+        <p>Chcesz zmienić całe mieszkanie? Zaczynamy od ustalenia, które podłogi, drzwi i okładziny zostają, a które trzeba zdemontować.</p>
+        <span>Zakres remontu <b aria-hidden="true">→</b></span>
       </a>
-      <a class="interior-offer" href="wykonczenia-wnetrz.html">
-        <h3>Wykończenia wnętrz</h3>
-        <p>Prace od stanu surowego zamkniętego lub deweloperskiego, z kolejnością dopasowaną do etapu budowy.</p>
-        <span aria-hidden="true">↗</span>
+      <a class="interior-offer" href="wykonczenia-wnetrz.html#stan-surowy">
+        <svg class="ico" aria-hidden="true"><use href="#i-roof"/></svg>
+        <h3>Dom w stanie surowym</h3>
+        <p>Dom ma już okna, drzwi i dach? Sprawdzamy, na jakim etapie są instalacje, tynki i wylewki, żeby ustalić kolejność wykończenia.</p>
+        <span>Etapy wykończenia <b aria-hidden="true">→</b></span>
+      </a>
+      <a class="interior-offer" href="wykonczenia-wnetrz.html#stan-deweloperski">
+        <svg class="ico" aria-hidden="true"><use href="#i-building"/></svg>
+        <h3>Mieszkanie od dewelopera</h3>
+        <p>Masz klucze do nowego lokalu? Na podstawie rzutu i stanu pomieszczeń ustalamy wykończenie ścian, posadzki, drzwi i listwy.</p>
+        <span>Od odbioru do wykończenia <b aria-hidden="true">→</b></span>
       </a>
       <a class="interior-offer" href="malowanie-wnetrz.html">
-        <h3>Malowanie ścian i sufitów</h3>
-        <p>Odświeżenie pokoju lub całego mieszkania, od zabezpieczenia podłóg i naprawy ubytków po ostatnią warstwę farby.</p>
-        <span aria-hidden="true">↗</span>
+        <svg class="ico" aria-hidden="true"><use href="#i-brush"/></svg>
+        <h3>Malowanie wnętrz</h3>
+        <p>Odświeżasz jeden pokój lub zmieniasz kolory w całym domu? Ustalamy, co trzeba zabezpieczyć i czy ściany wymagają naprawy przed malowaniem.</p>
+        <span>Przygotowanie i malowanie <b aria-hidden="true">→</b></span>
       </a>
     </div>
   </div>
@@ -650,6 +662,91 @@
       <h3 class="srv-name">Elewacja, tynk i renowacja</h3>
       <p class="srv-desc">Układanie tynku i naprawa uszkodzonego wykończenia. Po sprawdzeniu przyczepności podłoża ustalamy zakres przygotowania elewacji.</p>
       <div class="srv-pill">Wykończenie i naprawy</div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" aria-labelledby="gallery-title">
+  <div class="gallery-wrap">
+    <div class="gallery-heading">
+      <h2 class="sec-title" id="gallery-title">Elewacje na zdjęciach</h2>
+      <p>Domy jednorodzinne, bloki z balkonami i budynki z ozdobnymi gzymsami. Wybierz zdjęcie, żeby obejrzeć detale w powiększeniu.</p>
+    </div>
+    <div class="gallery-grid">
+      <a class="gallery-card" href="zdjecia/dom-z-lukarna-800.webp" aria-label="Powiększ zdjęcie: Dom z lukarną">
+        <figure>
+          <img src="zdjecia/dom-z-lukarna-480.webp" srcset="zdjecia/dom-z-lukarna-480.webp 480w, zdjecia/dom-z-lukarna-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="600" loading="lazy" decoding="async" alt="Kremowa elewacja domu z lukarną i pomarańczowym dachem">
+          <figcaption>Dom z lukarną<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+      <a class="gallery-card" href="zdjecia/zolty-budynek-z-gzymsami-800.webp" aria-label="Powiększ zdjęcie: Gzymsy i obramowania okien">
+        <figure>
+          <img src="zdjecia/zolty-budynek-z-gzymsami-480.webp" srcset="zdjecia/zolty-budynek-z-gzymsami-480.webp 480w, zdjecia/zolty-budynek-z-gzymsami-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="600" loading="lazy" decoding="async" alt="Żółta elewacja z białym gzymsem i łukowymi detalami nad oknami">
+          <figcaption>Gzymsy i obramowania okien<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+      <a class="gallery-card" href="zdjecia/blok-z-balkonami-800.webp" aria-label="Powiększ zdjęcie: Elewacja z balkonami">
+        <figure>
+          <img src="zdjecia/blok-z-balkonami-480.webp" srcset="zdjecia/blok-z-balkonami-480.webp 480w, zdjecia/blok-z-balkonami-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="531" loading="lazy" decoding="async" alt="Długa, jasnozielona elewacja bloku z rzędami balkonów od ulicy">
+          <figcaption>Elewacja z balkonami<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+      <a class="gallery-card" href="zdjecia/dom-z-ozdobnym-szczytem-800.webp" aria-label="Powiększ zdjęcie: Ozdobny szczyt nad wejściem">
+        <figure>
+          <img src="zdjecia/dom-z-ozdobnym-szczytem-480.webp" srcset="zdjecia/dom-z-ozdobnym-szczytem-480.webp 480w, zdjecia/dom-z-ozdobnym-szczytem-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="600" loading="lazy" decoding="async" alt="Jasna fasada z ozdobnym szczytem i czerwonym dachem">
+          <figcaption>Ozdobny szczyt nad wejściem<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+      <a class="gallery-card" href="zdjecia/wejscie-z-kolumnami-800.webp" aria-label="Powiększ zdjęcie: Wejście z kolumnami">
+        <figure>
+          <img src="zdjecia/wejscie-z-kolumnami-480.webp" srcset="zdjecia/wejscie-z-kolumnami-480.webp 480w, zdjecia/wejscie-z-kolumnami-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="600" loading="lazy" decoding="async" alt="Żółta fasada i balkon nad wejściem wsparty na dwóch kolumnach">
+          <figcaption>Wejście z kolumnami<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+      <a class="gallery-card" href="zdjecia/blok-od-szczytu-800.webp" aria-label="Powiększ zdjęcie: Ściana szczytowa bloku">
+        <figure>
+          <img src="zdjecia/blok-od-szczytu-480.webp" srcset="zdjecia/blok-od-szczytu-480.webp 480w, zdjecia/blok-od-szczytu-800.webp 800w"
+               sizes="(max-width: 540px) 90vw, (max-width: 900px) 44vw, (max-width: 1450px) 29vw, 416px"
+               width="800" height="531" loading="lazy" decoding="async" alt="Widok wzdłuż bloku na jasnozieloną ścianę szczytową i balkony przy narożniku">
+          <figcaption>Ściana szczytowa bloku<span aria-hidden="true">⤢</span></figcaption>
+        </figure>
+      </a>
+    </div>
+  </div>
+</section>
+<dialog class="gallery-dialog" id="gallery-dialog" aria-labelledby="gallery-caption">
+  <div class="gallery-viewer">
+    <button class="gallery-close" type="button" aria-label="Zamknij powiększenie" autofocus>×</button>
+    <div id="gallery-frame"></div>
+    <div class="gallery-controls">
+      <p id="gallery-caption" aria-live="polite"></p>
+      <button type="button" data-direction="-1" aria-label="Poprzednie zdjęcie">←</button>
+      <button type="button" data-direction="1" aria-label="Następne zdjęcie">→</button>
+    </div>
+  </div>
+</dialog>
+
+<section id="detale" aria-labelledby="detale-title">
+  <div class="detail-layout">
+    <div class="detail-heading">
+      <h2 class="sec-title" id="detale-title">Co ustalić przed pracami na elewacji?</h2>
+      <p>Sam metraż ścian to początek. O zakresie prac decydują także miejsca, w których elewacja styka się z oknem, balkonem lub gruntem.</p>
+    </div>
+    <div class="detail-cards">
+      <article><h3>Okna i parapety</h3><p>Gdy ściana po ociepleniu staje się grubsza, zmienia się głębokość wnęki okiennej. Warto sprawdzić wysięg parapetów i ustalić wykończenie ościeży.</p></article>
+      <article><h3>Cokół przy gruncie</h3><p>Dolna część ściany ma kontakt z wodą odbijającą się od chodnika. Przy oględzinach sprawdzamy stan cokołu i poziom opaski wokół domu.</p></article>
+      <article><h3>Rynny, lampy i balustrady</h3><p>Spisz elementy przymocowane do ścian. Przed wyceną ustalamy, co wymaga demontażu i gdzie po zakończeniu prac znajdą się mocowania.</p></article>
+      <article><h3>Stary tynk i ozdoby</h3><p>Pokaż miejsca, w których tynk się odspaja, oraz gzymsy czy opaski, które chcesz zachować. W ten sposób można ująć naprawy i detale w zakresie robót.</p></article>
     </div>
   </div>
 </section>
@@ -781,6 +878,7 @@
   <p>© 2026 Firma Budowlana MARBUD DOROTA DARDA-KALINOWSKA · NIP 8491375008</p>
   <div class="f-links">
     <a href="#services">Ocieplenia</a>
+    <a href="#gallery">Galeria elewacji</a>
     <a href="#process">Etapy prac</a>
     <a href="#remonty">Remonty i wnętrza</a>
     <a href="#contact">Kontakt</a>
@@ -821,6 +919,44 @@
       navToggle.setAttribute('aria-expanded', 'false');
     })
   );
+
+  const gallery = document.getElementById('gallery-dialog');
+  if (typeof gallery.showModal === 'function') {
+    const cards = Array.from(document.querySelectorAll('.gallery-card'));
+    const photo = new Image();
+    const caption = document.getElementById('gallery-caption');
+    let active = 0;
+    document.getElementById('gallery-frame').append(photo);
+
+    function showPhoto(index) {
+      active = (index + cards.length) % cards.length;
+      const card = cards[active];
+      photo.alt = card.querySelector('img').alt;
+      photo.src = card.href;
+      const title = card.querySelector('figcaption').firstChild.textContent;
+      caption.textContent = `${active + 1} / ${cards.length} · ${title}`;
+    }
+
+    cards.forEach((card, index) => card.addEventListener('click', event => {
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+      event.preventDefault();
+      showPhoto(index);
+      gallery.showModal();
+    }));
+    gallery.querySelector('.gallery-close').addEventListener('click', () => gallery.close());
+    gallery.querySelectorAll('[data-direction]').forEach(button =>
+      button.addEventListener('click', () => showPhoto(active + Number(button.dataset.direction)))
+    );
+    gallery.addEventListener('keydown', event => {
+      if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+        event.preventDefault();
+        showPhoto(active + (event.key === 'ArrowRight' ? 1 : -1));
+      }
+    });
+    gallery.addEventListener('click', event => {
+      if (event.target === gallery) gallery.close();
+    });
+  }
 
   // reveal on scroll
   if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
